@@ -1,142 +1,215 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>CV - Noémie Vincent</title>
-  </head>
-  <body aria-labelledby="cv">
-    <header>
-      <h1 role="heading" aria-level= "1" id="cv">
-        <a href="#"><img src="./img/name-logo.svg" alt="logo de Noémie Vincent" width="70"><img src="./img/logo.svg" alt="Noémie Vincent" width="70"></a>
-      </h1>
-      <nav aria-labelledby="nav">
-        <h2 role="heading" aria-level="2" id="nav">Navigation</h2>
-        <ul>
-          <li><a href="#presentation">À propos</a></li>
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#competence">Compétences</a></li>
-          <li><a href="#job">Job idéal</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">FR</a></li>
-          <li><a href="#contact">Me contacter</a></li>
-        </ul>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <title>CV - Noémie Vincent</title>
+</head>
+<body>
+<section class="hero">
+  <div class="hero__container">
+    <h1 role="heading" aria-level="1" class="hero__title">Noémie Vincent</h1>
+    <p class="hero__details"><span>Web</span> designer</p>
+  </div>
+<!--  <div class="hero__background">-->
+<!--    <figure class="hero__mood hero__mood&#45;&#45;active">-->
+<!--      <img src="img/carrousel-1.jpg" alt="" class="hero__img">-->
+<!--    </figure>-->
+<!--    <figure class="hero__mood">-->
+<!--      <img src="img/carrousel-2.jpg" alt="" class="hero__img">-->
+<!--    </figure>-->
+<!--    <figure class="hero__mood">-->
+<!--      <img src="img/carrousel-3.jpg" alt="" class="hero__img">-->
+<!--    </figure>-->
+<!--    <figure class="hero__mood">-->
+<!--      <img src="img/carrousel-4.jpg" alt="" class="hero__img">-->
+<!--    </figure>-->
+<!--    <figure class="hero__mood">-->
+<!--      <img src="img/carrousel-5.jpg" alt="" class="hero__img">-->
+<!--    </figure>-->
+<!--  </div>-->
+  <button class="footer__contact contact">Contactez-moi</button>
+  <div class="container hero__invite">
+    <a href="#about" data-scroll="" class="hero__scroll">Pour en savoir plus, faites
+      défiler l’écran</a>
+  </div>
+</section>
+<header>
+  <div class="container">
+    <div class="header__nav">
+      <nav class="nav" aria-labelledby="nav">
+        <h2 role="heading" aria-level="2" class="nav__title hidden" id="nav">Navigation principale</h2>
+        <a href="#about" class="nav__link"><span class="nav__text">À propos</span></a>
+        <a href="#skills" class="nav__link"><span class="nav__text">Compétences</span></a>
+        <a href="#job" class="nav__link"><span class="nav__text">Job idéal</span></a>
+        <a href="#languages" class="nav__link"><span class="nav__text">Languages maîtrisés</span></a>
       </nav>
-    </header>
-    <main>
-      <aside aria-labelledby="contact">
-        <h2 id="contact"></h2>
-      </aside>
-      <section aria-labelledby="intro">
-        <h2 role="heading" aria-level="2" id="intro">Vincent Noémie</h2>
-        <h3>Web Designer</h3>
-        <a href="#">Contactez-moi</a>
-      </section>
-      <section aria-labelledby="presentation">
-        <p>POUR EN SAVOIR PLUS, FAITES DÉFILER L'ÉCRAN</p>
-        <h2 role="heading" aria-level="2" id="presentation">à propos</h2>
-        <p>Je m’appelle <strong>Noémie Vincent</strong>, je suis étudiante à l’HEPL en option Web. J’habite à Verviers. Je possède le permis B et j’ai obtenu mon CESS en Juin 2020.</p>
-      </section>
-      <section aria-labelledby="parcours">
-        <h2 role="heading" aria-level="2" id="parcours">parcours</h2>
-        <div class="">
-          <h3>2020-2021</h3>
-          <p>Je suis ensuite entrée à l’HEPL pour commencer des études en Infographie, dans l’orientation Web. Mon expérience des études supérieures est un peu particulière, j’ai passé une grosse partie de ma première année chez moi en suivant des cours en ligne et en étant livrée à moi même.</p>
+    </div>
+    <div class="header__lang lang">
+      <a class="lang__current" href="#">fr</a>
+    </div>
+    <button class="footer__contact contact">Me contacter</button>
+  </div>
+</header>
+<main>
+  <section class="about" aria-labelledby="about">
+    <h2 role="heading" aria-level="2" class="about__title pre" id="about" data-number="01">À propos</h2>
+    <p class="about__details">Je m’appelle <b>Noémie Vincent</b>, je suis étudiante à l’<b>HEPL</b> en option <b>Web</b>. J’habite à Verviers.
+      Je possède le <b>permis B</b> et j’ai obtenu mon CESS en Juin 2020.</p>
+    <div class="about__logos logos">
+      <ul class="logos__list">
+        <li class="logos__item">
+          <img src="img/cess.png" alt="logo du CESS" class="logos__img" width="74px">
+        </li>
+        <li class="logos__item">
+          <img src="img/permis.png" alt="illustration d'une voiture" class="logos__img" width="74px">
+        </li>
+        <li class="logos__item">
+          <a href="https://www.arverdi.be/arvv" class="logos__link">
+            <img src="img/arverdi.png" alt="logo de l'Athénée Royal Verdi" class="logos__img" width="74px">
+          </a>
+        </li>
+        <li class="logos__item">
+          <a href="https://www.hepl.be/fr" class="logos__link">
+            <img src="img/hepl.png" alt="logo de l'HEPL" class="logos__img" width="74px">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="exp" id="exp">
+      <h3 class="exp__title hidden">Mon parcours</h3>
+      <div class="exp__controls">
+        <a href="#" title="Afficher les études supérieurs" data-target="0"
+           class="exp__control exp__control--active"><span
+                class="hidden">Afficher les études supérieurs</span></a>
+        <a href="#" title="Afficher les études secondaires" data-target="1"
+           class="exp__control"><span class="hidden">Afficher les études secondaires</span></a>
+      </div>
+      <div class="exp__items">
+        <div class="exp__item">
+          <p class="exp__text">
+            Je suis entrée à l’HEPL pour commencer des études en Infographie, dans l’orientation Web. Mon expérience des études supérieures est un peu particulière, j’ai passé une grosse partie de ma première année chez moi en suivant des cours en ligne et en étant livrée à moi même.
+          </p>
+          <h4 class="quote__date">2020 - 2023</h4>
         </div>
-        <div class="">
-          <h3>2014-2020</h3>
-          <p>J’ai fais mes études secondaires à l’Athénée Royale Verdi, dans l’option Transition Art. Cela m’a permis de développer ma créativité, ma curiosité, mon autonomie,…</p>
+        <div class="exp__item">
+          <p class="exp__text">
+            J’ai fais mes études secondaires à l’Athénée Royale Verdi, dans l’option Transition Art.
+            Cela m’a permis de développer ma créativité, ma curiosité, mon autonomie,…
+          </p>
+          <h4 class="quote__date">2014 - 2020</h4>
         </div>
-        <div class="">
+      </div>
+    </section>
+  </section>
+  <section class="skills" aria-labelledby="skills">
+    <div class="skills__details">
+      <h2 role="heading" aria-level="2" class="skills__title pre" id="skills" data-number="02">Compétences</h2>
+      <p class="skills__details">Mes expériences scolaires m’ont permis de développer ces différentes compétences très utiles dans le milieu du Web.</p>
+      <ol class="skills__list">
+        <li class="skills__item">autonomie</li>
+        <li class="skills__item">créativité</li>
+        <li class="skills__item">organisation</li>
+        <li class="skills__item">rapidité</li>
+        <li class="skills__item">à l'écoute</li>
+        <li class="skills__item">ponctualité</li>
+        <li class="skills__item">patience</li>
+      </ol>
+    </div>
+    <div class="skills__graph">
+
+    </div>
+  </section>
+  <section class="job" aria-labelledby="job">
+    <h2 class="job__title pre" id="job" data-number="03">Job idéal</h2>
+    <p class="job__details">
+      Mon travail idéal serait de m’occuper du développement front end d’un site Web. J’aimerais pouvoir travailler dans un lieu où il n’y pas de pression ou de compétition, chacun connait son rôle et n’essaie pas de se prouver meilleur que les autres ; je préfère également travailler seule ou un petit groupe avec des gens qui je connais déjà un minimum.
+    </p>
+  </section>
+  <section class="languages" aria-labelledby="languages">
+    <h2 role="heading" aria-level="2" class="languages__title" id="languages">Les languages Web que je maîtrise</h2>
+    <button class="languages__btn">Afficher tous les languages maîtrisés</button>
+    <div class="languages__logos">
+      <ul class="languages__list">
+        <li class="languages__item">
+          <img src="img/html-5.png" alt="HTML 5" class="languages__logo" width="200">
+          <p class="languages__name">HTML 5</p>
+        </li>
+        <li class="languages__item">
+          <img src="img/css-3.png" alt="CSS 3" class="languages__logo" width="200">
+          <p class="languages__name">CSS 3</p>
+        </li>
+        <li class="languages__item">
+          <img src="img/javascript.png" alt="JavaScript" class="languages__logo" width="200">
+          <p class="languages__name">JavaScript</p>
+        </li>
+        <li class="languages__item">
+          <img src="img/php.png" alt="PHP" class="languages__logo" width="200">
+          <p class="languages__name">PHP</p>
+        </li>
+        <li class="languages__item">
+          <img src="img/mysql.png" alt="MySQL" class="languages__logo" width="200">
+          <p class="languages__name">MySQL</p>
+        </li>
+      </ul>
+    </div>
+    <button class="contact">Contactez-moi</button>
+  </section>
+  <footer>
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__socials">
           <ul>
-            <li><img src="./img/cess.svg" alt="logo du CESS" width="50"></li>
-            <li><img src="./img/car.png" alt="voiture" width="50"></li>
-            <li><img src="./img/arverdi.jpeg" alt="logo de l'AR Verdi" width="50"></li>
-            <li><img src="./img/hepl.png" alt="logo de l'HEPL" width="50"></li>
+            <li><a href="#"><img src="./img/facebook.svg" alt="mon Facebook" width="20"></a></li>
+            <li><a href="#"><img src="./img/instagram.svg" alt="mon Instagram" width="20"></a></li>
+            <li><a href="#"><img src="./img/github.svg" alt="mon GitHub" width="20"></a></li>
           </ul>
         </div>
-      </section>
-      <section aria-labelledby="competence">
-        <h2 role="heading" aria-level="2" id="competence">compétences</h2>
-        <h3>Mes expériences scolaires m’ont permis de développer ces différentes compétences très utiles dans le milieu du Web.</h3>
-        <ol class="competences">
-          <li>autonomie</li>
-          <li>créativité</li>
-          <li>organisation</li>
-          <li>rapidité</li>
-          <li>à l'écoute des critiques</li>
-          <li>ponctualité</li>
-          <li>patience</li>
-        </ol>
-        <ol class="graphic">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-        </ol>
-      </section>
-      <section aria-labelledby="job">
-        <h2 role="heading" aria-level="2" id="job">job idéal</h2>
-        <p>Mon travail idéal serait de m’occuper du développement d’un site Web, c’est-à-dire de la partie HTML au JavaScript. J’aimerais pouvoir travailler dans un lieu où il n’y pas de pression ou de compétition, chacun connait son rôle et n’essaie pas de se prouver meilleur que les autres ; je préfère également travailler seule ou un petit groupe avec des gens qui je connais déjà un minimum.</p>
-        <img src="./img/jobideal.jpeg" alt="" width="200">
-      </section>
-      <section aria-labelledby="langages">
-        <h2 role="heading" aria-level="2" id="langages">Les langages Web que je maîtrise</h2>
-        <button>Afficher tous les languages</button>
-        <ul>
-          <li><img src="./img/html-5.png" alt="logo de HTML 5" width="70"></li>
-          <li>HTML 5</li>
-          <li><img src="./img/css-3.png" alt="logo de CSS 3" width="70"></li>
-          <li>CSS 3</li>
-          <li><img src="./img/javascript.png" alt="logo de JavaScript" width="70"></li>
-          <li>JAVASCRIPT</li>
-          <li><img src="./img/mysql.png" alt="logo de MySQL" width="70"></li>
-          <li>MY SQL</li>
-          <li><img src="./img/php.png" alt="logo de PHP" width="70"></li>
-          <li>PHP</li>
-        </ul>
-        <a href="#">Contactez-moi</a>
-      </section>
-    </main>
-    <footer>
-      <section aria-labelledby="logo">
-        <h2 role="heading" aria-level="2" id="logo"> <a href="#"><img src="./img/logo.svg" alt="" width="40"><img src="./img/name-logo.svg" alt="" width="40"></a>
-        </h2>
-        <ul>
-          <li><a href="#"><img src="./img/facebook.svg" alt="facebook" width="20"></a></li>
-          <li><a href="#"><img src="./img/instagram.svg" alt="instagram" width="20"></a></li>
-          <li><a href="#"><img src="./img/email.svg" alt="email" width="20"></a></li>
-        </ul>
-      </section>
-      <section aria-labelledby="liens">
-        <h2 role="heading" aria-level="2" id="liens">liens rapides</h2>
-        <ul>
-          <li><a href="#presentation">À propos</a></li>
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#competence">Compétences</a></li>
-          <li><a href="#job">Job idéal</a></li>
-        </ul>
-      </section>
-      <section aria-labelledby="infos">
-          <h2 role="heading" aria-level="2" id="infos">à propos de moi</h2>
-          <ul>
-            <li>Noémie Vincent</li>
-            <li>Rue Basse Voie, 78 4800 VERVIERS</li>
-            <li><a href="mailto:noemievincent21@gmail.com">noemievincent21@gmail.com</a></li>
-            <li>0471 61 42 41</li>
+        <div class="footer__nav fnav">
+          <h4 class="fnav__title">Liens rapides</h4>
+          <ul class="fnav__list">
+            <li class="fnav__items">
+              <a href="#about" class="fnav__link"><span class="fnav__text">À propos</span></a>
+            </li>
+            <li class="fnav__items">
+              <a href="#skills" class="fnav__link"><span class="fnav__text">Compétences</span></a>
+            </li>
+            <li class="fnav__items">
+              <a href="#job" class="fnav__link"><span class="fnav__text">Job idéal</span></a>
+            </li>
+            <li class="fnav__items">
+              <a href="#languages" class="fnav__link"><span class="fnav__text">Languages maîtrisés</span></a>
+            </li>
           </ul>
-      </section>
-      <section aria-labelledby="legal">
-        <h2 role="heading" aria-level="2" id="legal">footer</h2>
+        </div>
+        <div class="footer__contact fcontact">
+          <h4 class="fcontact__title">Infos de contact</h4>
+            <div itemscope itemtype="https://schema.org/Person">
+              <p itemprop="name" class="fcontact__name">Noémie Vincent</p>
+              <p itemprop="email" class="fcontact__mail mail"><a href="mailto:noemievincent21@gmail.com">noemievincent21@gmail.com</a></p>
+              <p itemprop="telephone" class="fcontact__tel">0471 61 42 41</p>
+            </div>
+            <div itemscope itemtype="https://schema.org/PostalAddress">
+              <p itemprop="streetAddress" class="fcontact__adress">Rue Basse Voie, 78</p>
+              <p itemprop="postalCode" class="fcontact__postal">4800 VERVIERS</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__links">
         <a href="#">Conditions générales</a>
         <a href="#">Mentions légales</a>
         <a href="#">Respect de la vie privée</a>
         <p id="hepl">projet étudiant pour l'<a href="#">HEPL</a></p>
-      </section>
-      <a href="#"><img src="./img/email.svg" alt="email" width="50">contactez-moi</a>
-    </footer>
-  </body>
+      </div>
+    </div>
+    <button class="footer__contact contact">Contactez-moi</button>
+  </footer>
+</main>
+</body>
 </html>

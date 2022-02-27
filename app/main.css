@@ -1,0 +1,112 @@
+html * {
+    font-family: hk_groteskregular, sans-serif;
+    font-size: 16px;
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0
+}
+
+.hero__title {
+    font-family: hk_groteskbold, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.9875em;
+    line-height: 1.2552301255em;
+    /*color: #FFFFFF;*/
+}
+
+h2 {
+    font-family: hk_groteskbold, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #7C7A7A;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 13px;
+}
+
+
+h2.pre:after {
+    content: "";
+    display: block;
+    width: 47px;
+    height: 2px;
+    background-image: url(img/dot-line.svg);
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 42px;
+    top: 15px;
+}
+
+h2.pre:before {
+    content: attr(data-number);
+    display: inline-block;
+    color: #dcf000;
+    margin-right: 73px;
+    background-color: #fff;
+    padding: 8px 6px 9px;
+    border-radius: 50px;
+}
+
+.skills, .job {
+    background-color: #F2F2F2;
+}
+
+@font-face {
+    font-family: hk_groteskregular;
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/hkgrotesk-regular.woff2) format("woff2"), url(fonts/hkgrotesk-regular.woff) format("woff"), url(fonts/hkgrotesk-regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: hk_grotesksemibold;
+    font-style: normal;
+    font-weight: 600;
+    src: url(fonts/hkgrotesk-semibold.woff2) format("woff2"), url(fonts/hkgrotesk-semibold.woff) format("woff"), url(fonts/hkgrotesk-semibold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: hk_groteskitalic;
+    font-style: italic;
+    font-weight: 400;
+    src: url(fonts/hkgrotesk-italic.woff2) format("woff2"), url(fonts/hkgrotesk-italic.woff) format("woff"), url(fonts/hkgrotesk-italic.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: hk_groteskbold;
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/hkgrotesk-bold.woff2) format("woff2"), url(fonts/hkgrotesk-bold.woff) format("woff"), url(fonts/hkgrotesk-bold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: hk_grotesklight_italic;
+    font-style: italic;
+    font-weight: 300;
+    src: url(fonts/hkgrotesk-lightitalic.woff2) format("woff2"), url(fonts/hkgrotesk-lightitalic.woff) format("woff"), url(fonts/hkgrotesk-lightitalic.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: hk_groteskmedium;
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/hkgrotesk-medium.woff2) format("woff2"), url(fonts/hkgrotesk-medium.woff) format("woff"), url(fonts/hkgrotesk-medium.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: hk_grotesklight;
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/hkgrotesk-light.woff2) format("woff2"), url(fonts/hkgrotesk-light.woff) format("woff"), url(fonts/hkgrotesk-light.ttf) format("truetype")
+}
