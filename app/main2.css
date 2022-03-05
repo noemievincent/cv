@@ -1,0 +1,47 @@
+
+
+
+
+.header {
+    height: 9.0625em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding-top: 3.125em
+}
+
+.header__logo {
+    margin-top: .3125em;
+    float: left;
+    position: relative;
+    z-index: 11;
+}
+
+.header__right {
+    text-align: right;
+    position: absolute;
+    right: 0
+}
+
+.header__right .btn {
+    vertical-align: top;
+    border-color: #7c7a7a;
+}
+
+
+
+
+
+.skills, .job {
+    background-color: #F2F2F2;
+}
+
+.logos__img {
+    filter: grayscale(1);
+}
+
+.logos__img:hover {
+    filter: none;
+}

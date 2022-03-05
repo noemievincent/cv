@@ -1,340 +1,513 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="js">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="main.css">
-  <title>CV - Noémie Vincent</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <title>CV - Noémie Vincent</title>
 </head>
 <body>
 <!-- ANIMATED PATH -->
-<section class="hero">
-  <div class="hero__container container">
-    <h1 role="heading" aria-level="1" class="hero__title">Noémie Vincent</h1>
-    <ol class="hero__steps">
-      <li class="hero__step"><span>Web</span> designer</li>
-      <li class="hero__step"><span>Front-end</span> developer</li>
-      <li class="hero__step"><span>UI/UX</span> designer</li>
-    </ol>
-  </div>
-<!--  <div class="hero__background">-->
-<!--    <figure class="hero__mood hero__mood&#45;&#45;active">-->
-<!--      <img src="img/carrousel-1.jpg" alt="" class="hero__img">-->
-<!--    </figure>-->
-<!--    <figure class="hero__mood">-->
-<!--      <img src="img/carrousel-2.jpg" alt="" class="hero__img">-->
-<!--    </figure>-->
-<!--    <figure class="hero__mood">-->
-<!--      <img src="img/carrousel-3.jpg" alt="" class="hero__img">-->
-<!--    </figure>-->
-<!--  </div>-->
-  <button class="footer__contact contact">Contactez-moi</button>
-  <div class="container hero__invite">
-    <a href="#about" data-scroll="" class="hero__scroll">Pour en savoir plus, faites
-      défiler l’écran</a>
-  </div>
+<section class="hero hero--shown hero--ready hero--autoplay">
+    <div class="hero__container container">
+        <div class="hero__inner">
+            <div class="hero__intro">
+                <h1 role="heading" aria-level="1" class="hero__title">Noémie Vincent</h1>
+                <div class="hero__sub">
+                    <p class="hero__baseline"><span>Web</span> designer</p>
+                    <div class="hero__objectives">
+                        <ol class="hero__steps">
+                            <li class="hero__step">Créer votre site web à partir <span>du moodboard</span></li>
+                            <li class="hero__step">Du moodboard <span>aux wireframes</span></li>
+                            <li class="hero__step">Des wireframes <span>au développement</span></li>
+                            <li class="hero__step">Du développement <span>au référencement</span></li>
+                            <li class="hero__step">Du référecement <span>à la mise en ligne</span></li>
+                        </ol>
+                    </div>
+                </div>
+                <a href="#contact" class="hero__contact btn btn--volt"><span class="btn__label">Contactez-moi</span></a>
+            </div>
+            <div class="hero__animation">
+                <!-- SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 749.99 368.93" class="hero__paths" fill="none">
+                    <defs>
+                        <style>
+                            .hero__zone,.hero__stroke{fill:none;stroke:#d5d91a;}.hero__zone{stroke-miterlimit:10;stroke-width:2px;}.hero__stroke{stroke-width:1.7px;}
+                        </style>
+                    </defs>
+                    <g id="Calque_2">
+                        <circle class="hero__zone hero__zone--previous hero__zone--active" cx="126.24" cy="359.58" r="8.5"/>
+                        <circle class="hero__zone" cx="274.81" cy="303.49" r="8.5"/>
+                        <circle class="hero__zone" cx="526.99" cy="313.34" r="8.5"/>
+                        <circle class="hero__zone" cx="687.54" cy="157.92" r="8.5"/>
+                        <circle class="hero__zone" cx="9.35" cy="303.92" r="8.5"/>
+                        <circle class="hero__zone" cx="740.64" cy="9.35" r="8.5"/>
+                        <path class="hero__stroke hero__stroke--right"
+                              d="M117.74,359.58A45.72,45.72,0,0,1,100.32,356c-18.42-7.89-16.08-22.3-31.74-30.78-14.38-7.78-24.81.64-45.21-10.58a69.45,69.45,0,0,1-7.76-5"/>
+                        <path class="hero__stroke hero__stroke--right"
+                              d="M266.8,306.51a69.78,69.78,0,0,1-22.22.43c-13.75-2-15-7.12-24-6.73-14.25.6-20.86,13.19-30,9.48-4.25-1.73-4.42-5.13-7.88-5.26-6.09-.23-11.22,10.11-15.24,18.39-8.13,16.81-6.46,23.2-13.27,29.32-3.43,3.08-9.22,6.28-19.51,6.44"/>
+                        <path class="hero__stroke hero__stroke--right"
+                              d="M518.44,313c-43.84,5-77.69.75-100.73-4.15C385,301.91,354.55,290.28,311,296.36a182.94,182.94,0,0,0-27.71,6.08"/>
+                        <path class="hero__stroke hero__stroke--right"
+                              d="M681.4,163.87a161.15,161.15,0,0,1-25.66,32.27c-37,35.79-70.75,33.17-81.69,62.47-5.59,15-.39,25.39-11,37.59-8.24,9.46-19.82,12.9-28,14.35"/>
+                        <path class="hero__stroke hero__stroke--right"
+                              d="M690.42,149.86c15-17.24,16.7-28.93,14.79-36.75-2.33-9.54-6.29-11.93-8.72-25.2-1.26-6.84-4-21.56,3.48-32.71,7.64-11.46,18.55-7.7,29.86-21.08a45.27,45.27,0,0,0,8.74-16.53"/>
+                        <path class="hero__stroke hero__stroke--left"
+                              d="M117.74,359.58A45.72,45.72,0,0,1,100.32,356c-18.42-7.89-16.08-22.3-31.74-30.78-14.38-7.78-24.81.64-45.21-10.58a69.45,69.45,0,0,1-7.76-5"/>
+                        <path class="hero__stroke hero__stroke--left"
+                              d="M266.8,306.51a69.78,69.78,0,0,1-22.22.43c-13.75-2-15-7.12-24-6.73-14.25.6-20.86,13.19-30,9.48-4.25-1.73-4.42-5.13-7.88-5.26-6.09-.23-11.22,10.11-15.24,18.39-8.13,16.81-6.46,23.2-13.27,29.32-3.43,3.08-9.22,6.28-19.51,6.44"/>
+                        <path class="hero__stroke hero__stroke--left"
+                              d="M518.44,313c-43.84,5-77.69.75-100.73-4.15C385,301.91,354.55,290.28,311,296.36a182.94,182.94,0,0,0-27.71,6.08"/>
+                        <path class="hero__stroke hero__stroke--left"
+                              d="M681.4,163.87a161.15,161.15,0,0,1-25.66,32.27c-37,35.79-70.75,33.17-81.69,62.47-5.59,15-.39,25.39-11,37.59-8.24,9.46-19.82,12.9-28,14.35"/>
+                        <path class="hero__stroke hero__stroke--left"
+                              d="M690.42,149.86c15-17.24,16.7-28.93,14.79-36.75-2.33-9.54-6.29-11.93-8.72-25.2-1.26-6.84-4-21.56,3.48-32.71,7.64-11.46,18.55-7.7,29.86-21.08a45.27,45.27,0,0,0,8.74-16.53"/>
+                        <path class="hero__progress"
+                              d="M117.74,359.58A45.72,45.72,0,0,1,100.32,356c-18.42-7.89-16.08-22.3-31.74-30.78-14.38-7.78-24.81.64-45.21-10.58a69.45,69.45,0,0,1-7.76-5"/>
+                        <path class="hero__progress"
+                              d="M266.8,306.51a69.78,69.78,0,0,1-22.22.43c-13.75-2-15-7.12-24-6.73-14.25.6-20.86,13.19-30,9.48-4.25-1.73-4.42-5.13-7.88-5.26-6.09-.23-11.22,10.11-15.24,18.39-8.13,16.81-6.46,23.2-13.27,29.32-3.43,3.08-9.22,6.28-19.51,6.44"/>
+                        <path class="hero__progress"
+                              d="M518.44,313c-43.84,5-77.69.75-100.73-4.15C385,301.91,354.55,290.28,311,296.36a182.94,182.94,0,0,0-27.71,6.08"/>
+                        <path class="hero__progress"
+                              d="M681.4,163.87a161.15,161.15,0,0,1-25.66,32.27c-37,35.79-70.75,33.17-81.69,62.47-5.59,15-.39,25.39-11,37.59-8.24,9.46-19.82,12.9-28,14.35"/>
+                        <path class="hero__progress"
+                              d="M690.42,149.86c15-17.24,16.7-28.93,14.79-36.75-2.33-9.54-6.29-11.93-8.72-25.2-1.26-6.84-4-21.56,3.48-32.71,7.64-11.46,18.55-7.7,29.86-21.08a45.27,45.27,0,0,0,8.74-16.53"/>
+                        <path class="hero__progress"
+                              d="M117.74,359.58A45.72,45.72,0,0,1,100.32,356c-18.42-7.89-16.08-22.3-31.74-30.78-14.38-7.78-24.81.64-45.21-10.58a69.45,69.45,0,0,1-7.76-5"/>
+                        <path class="hero__progress"
+                              d="M266.8,306.51a69.78,69.78,0,0,1-22.22.43c-13.75-2-15-7.12-24-6.73-14.25.6-20.86,13.19-30,9.48-4.25-1.73-4.42-5.13-7.88-5.26-6.09-.23-11.22,10.11-15.24,18.39-8.13,16.81-6.46,23.2-13.27,29.32-3.43,3.08-9.22,6.28-19.51,6.44"/>
+                        <path class="hero__progress"
+                              d="M518.44,313c-43.84,5-77.69.75-100.73-4.15C385,301.91,354.55,290.28,311,296.36a182.94,182.94,0,0,0-27.71,6.08"/>
+                        <path class="hero__progress"
+                              d="M681.4,163.87a161.15,161.15,0,0,1-25.66,32.27c-37,35.79-70.75,33.17-81.69,62.47-5.59,15-.39,25.39-11,37.59-8.24,9.46-19.82,12.9-28,14.35"/>
+                        <path class="hero__progress"
+                              d="M690.42,149.86c15-17.24,16.7-28.93,14.79-36.75-2.33-9.54-6.29-11.93-8.72-25.2-1.26-6.84-4-21.56,3.48-32.71,7.64-11.46,18.55-7.7,29.86-21.08a45.27,45.27,0,0,0,8.74-16.53"/>
+                    </g>
+                </svg>
+                <div class="hero__interactive">
+                    <button class="hero__point hero__point--visible hero__point--first hero__point--previous">
+                        <strong class="hero__label">Web Designer</strong>
+                    </button>
+                    <button class="hero__point">
+                        <strong class="hero__label">mood board</strong>
+                    </button>
+                    <button class="hero__point">
+                        <strong class="hero__label">wireframes</strong>
+                    </button>
+                    <button class="hero__point">
+                        <strong class="hero__label">développement</strong>
+                    </button>
+                    <button class="hero__point">
+                        <strong class="hero__label">référencement</strong>
+                    </button>
+                    <button class="hero__point hero__point--visible hero__point--last">
+                        <strong class="hero__label">Client</strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero__background">
+        <figure class="hero__mood hero__mood--active">
+          <img src="img/carrousel-1.jpg" alt="Un carnet de notes et un ordinateur" class="hero__img">
+        </figure>
+        <figure class="hero__mood">
+          <img src="img/carrousel-2.jpg" alt="Brainstorming sur papier" class="hero__img">
+        </figure>
+        <figure class="hero__mood">
+          <img src="img/carrousel-3.jpg" alt="Dessins sur papier (wireframe)" class="hero__img">
+        </figure>
+        <figure class="hero__mood hero__mood--active">
+          <img src="img/carrousel-4.jpg" alt="Code de programmation" class="hero__img">
+        </figure>
+        <figure class="hero__mood">
+          <img src="img/carrousel-5.jpg" alt="Personne travaillant sur un MacBook" class="hero__img">
+        </figure>
+        <figure class="hero__mood">
+          <img src="img/carrousel-6.jpg" alt="MacBook Pro sur une table à côté d'un iMac blanc et d'une souris Magic Mouse" class="hero__img">
+        </figure>
+      </div>
+    <div class="container hero__invite">
+        <a href="#about" data-scroll="" class="hero__scroll">Pour en savoir plus, faites
+            défiler l’écran</a>
+    </div>
 </section>
 <!-- HEADER -->
-<header>
-  <div class="container">
-    <div class="header__nav">
-      <nav class="nav" aria-labelledby="nav">
-        <h2 role="heading" aria-level="2" class="nav__title hidden" id="nav">Navigation principale</h2>
-        <a href="#about" class="nav__link"><span class="nav__text">À propos</span></a>
-        <a href="#skills" class="nav__link"><span class="nav__text">Compétences</span></a>
-        <a href="#job" class="nav__link"><span class="nav__text">Job idéal</span></a>
-        <a href="#languages" class="nav__link"><span class="nav__text">Languages maîtrisés</span></a>
-      </nav>
+<header class="header header--light">
+    <div class="container">
+        <a href="#" class="header__logo">
+            <svg version="1.1" id="logo-dark" class="logo-dark" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 x="0px" y="0px" width="211" height="40"
+                 viewBox="0 0 300 80" xml:space="preserve">
+                <g id="NVincent" transform="translate(0 87.965)">
+                    <path id="Tracé_29" class="st0" d="M210-69.1v37.6h-3.6v-37.6h-9.7v-3.6H220v3.6H210z"/>
+                    <path id="Tracé_28" class="st0"
+                          d="M188.5-31.3l-17.2-30.1l-0.5-1.8v31.7h-3.6v-41h2l17.2,30.1l0.5,1.8v-31.7h3.6v41.2h-2V-31.3z"/>
+                    <path id="Tracé_27" class="st0"
+                          d="M137.1-31.3v-41.2h23.1v3.6h-19.5v15.4h15.9v3.6h-15.9v15.4h19.5v3.6h-23.1V-31.3z"/>
+                    <path id="Tracé_26" class="st0" d="M128-36.9c-0.5,1.2-1.3,2.3-2.3,3.2c-1,0.9-2,1.6-3.2,2.3c-1.2,0.5-2.5,0.7-3.9,0.7h-2.9
+                c-1.3,0-2.6-0.2-3.9-0.7c-1.2-0.5-2.3-1.3-3.2-2.3c-0.9-1-1.6-2-2.3-3.2c-0.5-1.2-0.7-2.5-0.7-3.9V-63c0-1.3,0.2-2.6,0.7-3.9
+                c0.5-1.2,1.3-2.3,2.3-3.2c1-0.9,2-1.6,3.2-2.3c1.2-0.5,2.5-0.7,3.9-0.7h2.9c1.3,0,2.6,0.2,3.9,0.7c1.2,0.5,2.3,1.3,3.2,2.3
+                c0.9,1,1.6,2,2.3,3.2c0.5,1.2,0.7,2.5,0.7,3.9v1.6l-3.6,0.7V-63c0-0.8-0.2-1.7-0.5-2.5c-0.6-1.5-1.9-2.8-3.4-3.4
+                c-0.8-0.4-1.6-0.5-2.5-0.5h-2.5c-0.8,0-1.7,0.2-2.5,0.5c-0.7,0.3-1.4,0.8-2,1.4c-0.6,0.6-1.1,1.3-1.4,2c-0.3,0.8-0.4,1.6-0.5,2.5
+                v22.2c0,0.8,0.2,1.7,0.5,2.5c0.3,0.7,0.8,1.4,1.4,2c0.6,0.6,1.3,1.1,2,1.4c0.8,0.4,1.6,0.5,2.5,0.5h2.5c0.8,0,1.7-0.2,2.5-0.5
+                c0.7-0.3,1.4-0.8,2-1.4c0.6-0.6,1.1-1.3,1.4-2c0.4-0.8,0.5-1.6,0.5-2.5v-2.3l3.6,0.7v1.6C128.7-39.5,128.5-38.2,128-36.9z"/>
+                    <path id="Tracé_25" class="st0"
+                          d="M94.7-31.3L77.5-61.4l-0.2-1.8v31.7h-3.6v-41h2l17.2,30.1l0.5,1.8v-31.7H97v41.2h-2.3V-31.3z"/>
+                    <path id="Tracé_24" class="st0" d="M60.5-31.3v-41.2h3.6v41.2H60.5z"/>
+                    <path id="Tracé_23" class="st0" d="M51-72.5h3.9L30.6-32.2h-2v-40.3h3.9v30.1L51-72.5z"/>
+                    <path id="Tracé_22" class="st0"
+                          d="M21.3-31.3L4.1-61.4l-0.5-1.8v31.7H0v-41h2l17.2,30.1l0.5,1.8v-31.7h3.6v41.2h-2V-31.3z"/>
+                </g>
+                <path id="Tracé_5" class="st0" d="M258.4,25.9l6.5,11.1v34.2h-6.5V25.9z M265.5,19.3l5,8.8l3.2,5.4l0,0l21.6,37.4h3.4V0h-6.5v52.4
+        L261.8,0h-3.4v7.2l6.5,11"/>
+            </svg>
+        </a>
+        <div class="header__nav">
+            <nav class="nav" aria-labelledby="nav">
+                <h2 role="heading" aria-level="2" class="nav__title hidden" id="nav">Navigation principale</h2>
+                <a href="#" class="nav__link nav__link--active"><span class="nav__text">Accueil</span></a>
+                <a href="#about" class="nav__link"><span class="nav__text">À propos</span></a>
+                <a href="#skills" class="nav__link"><span class="nav__text">Compétences</span></a>
+                <a href="#job" class="nav__link"><span class="nav__text">Job idéal</span></a>
+                <a href="#languages" class="nav__link"><span class="nav__text">Languages maîtrisés</span></a>
+            </nav>
+        </div>
+        <div class="header__right">
+            <div class="header__lang lang btn btn--simple">
+                <a class="lang__current btn__label" href="#">fr</a>
+            </div>
+            <a href="#contact" class="header__contact btn btn--volt"><span class="btn__label">Me contacter</span></a>
+        </div>
     </div>
-    <div class="header__lang lang">
-      <a class="lang__current" href="#">fr</a>
-    </div>
-    <button class="footer__contact contact">Me contacter</button>
-  </div>
 </header>
 <main>
-<!-- À PROPOS -->
-  <section class="about container" aria-labelledby="about">
-    <h2 role="heading" aria-level="2" class="about__title pre" id="about" data-number="01">À propos</h2>
-    <p class="about__details">Je m’appelle <b>Noémie Vincent</b>, je suis étudiante à l’<b>HEPL</b> en option <b>Web</b>. J’habite à Verviers.
-      Je possède le <b>permis B</b> et j’ai obtenu mon CESS en Juin 2020.</p>
-    <div class="about__logos logos">
-      <ul class="logos__list">
-        <li class="logos__item">
-          <img src="img/cess.png" alt="logo du CESS" class="logos__img" width="74px">
-        </li>
-        <li class="logos__item">
-          <img src="img/permis.png" alt="illustration d'une voiture" class="logos__img" width="74px">
-        </li>
-        <li class="logos__item">
-          <a href="https://www.arverdi.be/arvv" class="logos__link">
-            <img src="img/arverdi.png" alt="logo de l'Athénée Royal Verdi" class="logos__img" width="74px">
-          </a>
-        </li>
-        <li class="logos__item">
-          <a href="https://www.hepl.be/fr" class="logos__link">
-            <img src="img/hepl.png" alt="logo de l'HEPL" class="logos__img" width="74px">
-          </a>
-        </li>
-      </ul>
-    </div>
-<!-- PARCOURS -->
-    <section class="exp" id="exp">
-      <h3 class="exp__title hidden">Mon parcours</h3>
-      <div class="exp__slider container">
-        <div class="exp__controls">
-          <a href="#" title="Afficher les études supérieurs" data-target="0"
-             class="exp__control exp__control--active"><span
-                  class="hidden">Afficher les études supérieurs</span></a>
-          <a href="#" title="Afficher les études secondaires" data-target="1"
-             class="exp__control"><span class="hidden">Afficher les études secondaires</span></a>
+    <!-- À PROPOS -->
+    <section class="about container" aria-labelledby="about">
+        <h2 role="heading" aria-level="2" class="about__title pre" id="about" data-number="01">À propos</h2>
+        <p class="about__details title">Je m’appelle <b>Noémie Vincent</b>, je suis étudiante à l’<b>HEPL</b> en option
+            <b>Web</b>. J’habite à Verviers.
+            Je possède le <b>permis B</b> et j’ai obtenu mon CESS en Juin 2020.</p>
+        <div class="about__logos logos">
+            <ul class="logos__list">
+                <li class="logos__item">
+                    <img src="img/cess.png" alt="logo du CESS" class="logos__img logos__img--cess" width="74px">
+                </li>
+                <li class="logos__item">
+                    <img src="img/permis.png" alt="illustration d'une voiture" class="logos__img logos__img--permis" width="74px">
+                </li>
+                <li class="logos__item">
+                    <a href="https://www.arverdi.be/arvv" class="logos__link">
+                        <img src="img/arverdi.png" alt="logo de l'Athénée Royal Verdi" class="logos__img logos__img--arverdi" width="74px">
+                    </a>
+                </li>
+                <li class="logos__item">
+                    <a href="https://www.hepl.be/fr" class="logos__link">
+                        <img src="img/hepl.png" alt="logo de l'HEPL" class="logos__img logos__img--hepl" width="74px">
+                    </a>
+                </li>
+            </ul>
         </div>
-      </div>
-      <div class="exp__items">
-        <div class="exp__item">
-          <p class="exp__text">
-            Je suis entrée à l’HEPL pour commencer des études en Infographie, dans l’orientation Web. Mon expérience des études supérieures est un peu particulière, j’ai passé une grosse partie de ma première année chez moi en suivant des cours en ligne et en étant livrée à moi même.
-          </p>
-          <h4 class="quote__date">2020 - 2023</h4>
-        </div>
-        <div class="exp__item">
-          <p class="exp__text">
-            J’ai fais mes études secondaires à l’Athénée Royale Verdi, dans l’option Transition Art.
-            Cela m’a permis de développer ma créativité, ma curiosité, mon autonomie,…
-          </p>
-          <h4 class="quote__date">2014 - 2020</h4>
-        </div>
-      </div>
+        <!-- PARCOURS -->
+        <section class="exp" id="exp">
+            <h3 class="exp__title hidden">Mon parcours</h3>
+            <div class="exp__slider container">
+                <div class="exp__controls">
+                    <a href="#" title="Afficher les études supérieurs" data-target="0"
+                       class="exp__control exp__control--active"><span
+                            class="hidden">Afficher les études supérieurs</span></a>
+                    <a href="#" title="Afficher les études secondaires" data-target="1"
+                       class="exp__control"><span class="hidden">Afficher les études secondaires</span></a>
+                </div>
+            </div>
+            <div class="exp__items">
+                <div class="exp__item">
+                    <p class="exp__text">
+                        Je suis entrée à l’HEPL pour commencer des études en Infographie, dans l’orientation Web. Mon
+                        expérience des études supérieures est un peu particulière, j’ai passé une grosse partie de ma
+                        première année chez moi en suivant des cours en ligne et en étant livrée à moi même.
+                    </p>
+                    <h4 class="quote__date">2020 - 2023</h4>
+                </div>
+                <div class="exp__item">
+                    <p class="exp__text">
+                        J’ai fais mes études secondaires à l’Athénée Royale Verdi, dans l’option Transition Art.
+                        Cela m’a permis de développer ma créativité, ma curiosité, mon autonomie,…
+                    </p>
+                    <h4 class="quote__date">2014 - 2020</h4>
+                </div>
+            </div>
+        </section>
     </section>
-  </section>
-<!-- COMPÉTENCES -->
-  <section class="skills" aria-labelledby="skills">
-    <div class="skills__container container">
-      <h2 role="heading" aria-level="2" class="skills__title pre" id="skills" data-number="02">Compétences</h2>
-      <div class="skills__left">
-        <p class="skills__details">Mes expériences scolaires m’ont permis de développer ces différentes compétences très utiles dans le milieu du Web.</p>
-        <ol class="skills__list wysiwyg">
-          <li class="skills__item">autonomie</li>
-          <li class="skills__item">créativité</li>
-          <li class="skills__item">organisation</li>
-          <li class="skills__item">rapidité</li>
-          <li class="skills__item">à l'écoute</li>
-          <li class="skills__item">ponctualité</li>
-          <li class="skills__item">patience</li>
-        </ol>
-      </div>
-    </div>
-    <div class="skills__graph">
-      <div class="skills__div1" data-percent=""></div>
-      <div class="skills__div2" data-percent=""></div>
-      <div class="skills__div3" data-percent=""></div>
-      <div class="skills__div4" data-percent=""></div>
-      <div class="skills__div5" data-percent=""></div>
-      <div class="skills__div6" data-percent=""></div>
-      <div class="skills__div7" data-percent=""></div>
-    </div>
-  </section>
-<!-- JOB IDÉAL -->
-  <section class="job" aria-labelledby="job">
-    <div class="job__container container">
-      <div class="job__left">
-        <img src="img/jobideal.jpeg" alt="Un homme travaille devant un ordinateur" class="job__img">
-      </div>
-      <div class="job__right">
-        <h2 role="heading" aria-level="2" class="job__title pre" id="job" data-number="03">Job idéal</h2>
-        <p class="job__details$">
-          Mon travail idéal serait de m’occuper du développement front end d’un site Web.
-        </p>
-        <p class="job__text wysiwyg">J’aimerais pouvoir travailler dans un lieu où il n’y pas de pression ou de compétition, chacun connait son rôle et n’essaie pas de se prouver meilleur que les autres ; je préfère également travailler seule ou un petit groupe avec des gens qui je connais déjà un minimum.</p>
-      </div>
-    </div>
-  </section>
-<!-- LANGUAGES MAITRISÉS -->
-  <section class="languages" aria-labelledby="languages">
-    <h2 role="heading" aria-level="2" class="languages__title" id="languages">Les languages Web que je maîtrise</h2>
-    <button class="languages__btn">Afficher tous les languages maîtrisés</button>
-    <div class="languages__container container">
-      <ul class="languages__list">
-        <li class="languages__item">
-          <img src="img/html-5.png" alt="HTML 5" class="languages__logo" width="200">
-          <p class="languages__name">HTML 5</p>
-        </li>
-        <li class="languages__item">
-          <img src="img/css-3.png" alt="CSS 3" class="languages__logo" width="200">
-          <p class="languages__name">CSS 3</p>
-        </li>
-        <li class="languages__item">
-          <img src="img/javascript.png" alt="JavaScript" class="languages__logo" width="200">
-          <p class="languages__name">JavaScript</p>
-        </li>
-        <li class="languages__item">
-          <img src="img/php.png" alt="PHP" class="languages__logo" width="200">
-          <p class="languages__name">PHP</p>
-        </li>
-        <li class="languages__item">
-          <img src="img/mysql.png" alt="MySQL" class="languages__logo" width="200">
-          <p class="languages__name">MySQL</p>
-        </li>
-      </ul>
-    </div>
-    <button class="contact">Contactez-moi</button>
-  </section>
-<!-- CONTACT -->
-  <section class="contact" aria-labelledby="contact">
-    <div class="contact__top">
-      <div class="container">
-        <a href="#" class="contact__logo"><span class="hidden">Noémie Vincent</span></a>
-        <div class="contact__header">
-          <div class="contact__text">
-            <h2 role="heading" aria-level="2" class="contact__title" id="contact">Contactez-moi</h2>
-            <div class="contact__intro wysiwyg">
-              <p>Je suis à votre disposition avec de plus amples informations et des réponses à vos éventuelles questions.</p>
+    <!-- COMPÉTENCES -->
+    <section class="skills" aria-labelledby="skills">
+        <div class="skills__container container">
+            <h2 role="heading" aria-level="2" class="skills__title pre" id="skills" data-number="02">Compétences</h2>
+            <div class="skills__left">
+                <p class="skills__details title">Mes expériences scolaires m’ont permis de développer ces différentes
+                    compétences très utiles dans le milieu du Web.</p>
+                <ol class="skills__list wysiwyg">
+                    <li class="skills__item">autonomie</li>
+                    <li class="skills__item">créativité</li>
+                    <li class="skills__item">organisation</li>
+                    <li class="skills__item">rapidité</li>
+                    <li class="skills__item">à l'écoute</li>
+                    <li class="skills__item">ponctualité</li>
+                    <li class="skills__item">patience</li>
+                </ol>
             </div>
-          </div>
         </div>
-        <div class="contact__card vcard">
-          <p class="subtitle fn">Autre moyens de contact</p>
-          <a href="https://www.google.be/maps/place/Avos-Sant%C3%A9,+Rue+Basse+Voie+78,+4801+Verviers/@50.5789271,5.8931958,17z/data=!3m1!4b1!4m5!3m4!1s0x47c08973d8132cd7:0x3029dd216678a5d8!8m2!3d50.5789271!4d5.8953845?hl=fr"
-             class="contact__link adr">
-            <span class="street-address">Rue Basse Voie 78</span>,
-            <br>
-            <span class="postal-code">4800</span> <span class="locality">Verviers</span>, <span
-                  class="country-name">Belgique</span>
-          </a>
-          <a href="tel:0471614241" class="contact__link">0471 61 42 41</a>
-          <a href="mailto:noemievincent21@gmail.com" class="contact__link">noemievincent21@gmail.com</a>
+        <div class="skills__graph">
+            <div class="skills__div1" data-percent=""></div>
+            <div class="skills__div2" data-percent=""></div>
+            <div class="skills__div3" data-percent=""></div>
+            <div class="skills__div4" data-percent=""></div>
+            <div class="skills__div5" data-percent=""></div>
+            <div class="skills__div6" data-percent=""></div>
+            <div class="skills__div7" data-percent=""></div>
         </div>
-        <a href="#" class="contact__close">
-          <span class="hidden">Fermer la page de contact</span>
-        </a>
-      </div>
-      <div class="contact__bottom">
-        <div class="container">
-          <p class="pre" data-number="01">Informations personnelles</p>
-          <form action="index.html" method="post" class="contact__form contact__form--success form" novalidate="">
-            <div class="form__groups">
-              <div class="form__group form__group--visible" id="who">
-                <!-- NOM -->
-                <label for="lastname" class="form__label required">nom</label>
-                <div class="form__textfield form__textfield--half">
-                  <input type="text" class="form__textinput" id="lastname" name="lastname" placeholder="Stewart">
-                  <span class="form__textborder" aria-hidden="true"></span>
-                </div>
-                <!-- PRENOM -->
-                <label for="firstname" class="form__label required">prénom</label>
-                <div class="form__textfield form__textfield--half">
-                  <input type="text" class="form__textinput" id="firstname" name="firstname" placeholder="Julia">
-                  <span class="form__textborder" aria-hidden="true"></span>
-                </div>
-                <!-- SOCIETE -->
-                <label for="company" class="form__label">société</label>
-                <div class="form__textfield form__textfield--half">
-                  <input type="text" class="form__textinput" id="company" name="company" placeholder="Julia & Co.">
-                  <span class="form__textborder" aria-hidden="true"></span>
-                </div>
-                <!-- TELEPHONE -->
-                <label for="tel" class="form__label">prénom</label>
-                <div class="form__textfield form__textfield--half">
-                  <input type="text" class="form__textinput" id="tel" name="tel" placeholder="+32 484 27 05 55">
-                  <span class="form__textborder" aria-hidden="true"></span>
-                </div>
-                <!-- EMAIL -->
-                <label for="email" class="form__label required">adresse email</label>
-                <div class="form__textfield form__textfield--half">
-                  <input type="email" class="form__textinput" id="email" name="email" placeholder="julia.stewart@example.com">
-                  <span class="form__textborder" aria-hidden="true"></span>
-                </div>
-              </div>
-              <div class="form__group form__group--right" id="subject">
-              <label for="message" class="form__label">Votre message</label>
-                <div class="form__textfield form__textfield--half">
-                  <textarea name="message" id="message" class="form__textarea" placeholder="Bonjour,"></textarea>
-                  <span class="form__textborder" aria-hidden="true"></span>
-                </div>
-              </div>
+    </section>
+    <!-- JOB IDÉAL -->
+    <section class="job" aria-labelledby="job">
+        <div class="job__container container">
+            <div class="job__left">
+                <img src="img/jobideal.jpeg" alt="Un homme travaille devant un ordinateur" class="job__img">
             </div>
-            <div class="form__navigator">
-              <a href="#"
-                 class="form__control form__control--disabled form__control--prev">
+            <div class="job__right">
+                <h2 role="heading" aria-level="2" class="job__title pre" id="job" data-number="03">Job idéal</h2>
+                <p class="job__details title">
+                    Mon travail idéal serait de m’occuper du développement front end d’un site Web.
+                </p>
+                <p class="job__text wysiwyg">J’aimerais pouvoir travailler dans un lieu où il n’y pas de pression ou de
+                    compétition, chacun connait son rôle et n’essaie pas de se prouver meilleur que les autres ; je
+                    préfère également travailler seule ou un petit groupe avec des gens qui je connais déjà un
+                    minimum.</p>
+            </div>
+        </div>
+    </section>
+    <!-- LANGUAGES MAITRISÉS -->
+    <section class="languages" aria-labelledby="languages">
+        <h2 role="heading" aria-level="2" class="languages__title" id="languages">Les languages Web que je maîtrise</h2>
+        <button class="languages__btn btn btn--bv-dark"><span class="btn__label">Afficher tous les languages maîtrisés</span></button>
+        <div class="languages__container container">
+            <ul class="languages__list">
+                <li class="languages__item">
+                    <img src="img/html-5.png" alt="HTML 5" class="languages__logo" width="200">
+                    <p class="languages__name">HTML 5</p>
+                </li>
+                <li class="languages__item">
+                    <img src="img/css-3.png" alt="CSS 3" class="languages__logo" width="200">
+                    <p class="languages__name">CSS 3</p>
+                </li>
+                <li class="languages__item">
+                    <img src="img/javascript.png" alt="JavaScript" class="languages__logo" width="200">
+                    <p class="languages__name">JavaScript</p>
+                </li>
+                <li class="languages__item">
+                    <img src="img/php.png" alt="PHP" class="languages__logo" width="200">
+                    <p class="languages__name">PHP</p>
+                </li>
+                <li class="languages__item">
+                    <img src="img/mysql.png" alt="MySQL" class="languages__logo" width="200">
+                    <p class="languages__name">MySQL</p>
+                </li>
+            </ul>
+        </div>
+        <a href="#contact" class="contact btn btn--volt"><span class="btn__label">Contactez-moi</span></a>
+    </section>
+    <!-- CONTACT -->
+    <section class="contact" aria-labelledby="contact">
+        <div class="contact__top">
+            <div class="container">
+                <a href="#" class="contact__logo">
+                    <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 220 129.9" xml:space="preserve">
+                        <g id="NVincent" transform="translate(0 87.788)">
+	                        <path id="Tracé_29" class="st0" d="M210,3.9v37.6h-3.6V3.9h-9.7V0.2H220v3.6H210z"/>
+                            <path id="Tracé_28" class="st0"
+                                  d="M188.5,41.7l-17.2-30.1l-0.5-1.8v31.7h-3.6v-41h2l17.2,30.1l0.5,1.8V0.7h3.6v41.2h-2V41.7z"/>
+                            <path id="Tracé_27" class="st0"
+                                  d="M137.1,41.7V0.5h23.1v3.6h-19.5v15.4h15.9v3.6h-15.9v15.4h19.5v3.6h-23.1V41.7z"/>
+                            <path id="Tracé_26" class="st0" d="M128,36c-0.5,1.2-1.3,2.3-2.3,3.2c-1,0.9-2,1.6-3.2,2.3c-1.2,0.5-2.5,0.7-3.9,0.7h-2.9
+		c-1.3,0-2.6-0.2-3.9-0.7c-1.2-0.5-2.3-1.3-3.2-2.3c-0.9-1-1.6-2-2.3-3.2c-0.5-1.2-0.7-2.5-0.7-3.9V10c0-1.3,0.2-2.6,0.7-3.9
+		c0.5-1.2,1.3-2.3,2.3-3.2c1-0.9,2-1.6,3.2-2.3c1.2-0.5,2.5-0.7,3.9-0.7h2.9c1.3,0,2.6,0.2,3.9,0.7c1.2,0.5,2.3,1.3,3.2,2.3
+		c0.9,1,1.6,2,2.3,3.2c0.5,1.2,0.7,2.5,0.7,3.9v1.6l-3.6,0.7V10c0-0.8-0.2-1.7-0.5-2.5c-0.6-1.5-1.9-2.8-3.4-3.4
+		c-0.8-0.4-1.6-0.5-2.5-0.5h-2.5c-0.8,0-1.7,0.2-2.5,0.5c-0.7,0.3-1.4,0.8-2,1.4c-0.6,0.6-1.1,1.3-1.4,2c-0.3,0.8-0.4,1.6-0.5,2.5
+		v22.2c0,0.8,0.2,1.7,0.5,2.5c0.3,0.7,0.8,1.4,1.4,2c0.6,0.6,1.3,1.1,2,1.4c0.8,0.4,1.6,0.5,2.5,0.5h2.5c0.8,0,1.7-0.2,2.5-0.5
+		c0.7-0.3,1.4-0.8,2-1.4c0.6-0.6,1.1-1.3,1.4-2c0.4-0.8,0.5-1.6,0.5-2.5v-2.3l3.6,0.7v1.6C128.7,33.5,128.5,34.8,128,36z"/>
+                            <path id="Tracé_25" class="st0"
+                                  d="M94.7,41.7L77.5,11.6l-0.2-1.8v31.7h-3.6v-41h2l17.2,30.1l0.5,1.8V0.7H97v41.2h-2.3V41.7z"/>
+                            <path id="Tracé_24" class="st0" d="M60.5,41.7V0.5h3.6v41.2H60.5z"/>
+                            <path id="Tracé_23" class="st0" d="M51,0.5h3.9L30.6,40.8h-2V0.5h3.9v30.1L51,0.5z"/>
+                            <path id="Tracé_22" class="st0"
+                                  d="M21.3,41.7L4.1,11.6L3.6,9.7v31.7H0v-41h2l17.2,30.1l0.5,1.8V0.7h3.6v41.2h-2V41.7z"/>
+                        </g>
+                            <path id="Tracé_5" class="st0" d="M78.4,25.9L84.9,37v34.2h-6.5V25.9z M85.5,19.3l5,8.8l3.2,5.4l0,0l21.6,37.4h3.4V0h-6.5v52.4L81.8,0h-3.4v7.2l6.5,11"/>
+                    </svg>
+                    <span class="hidden">Noémie Vincent</span></a>
+                <div class="contact__header">
+                    <div class="contact__text">
+                        <h2 role="heading" aria-level="2" class="contact__title" id="contact">Contactez-moi</h2>
+                        <div class="contact__intro wysiwyg">
+                            <p>Je suis à votre disposition avec de plus amples informations et des réponses à vos
+                                éventuelles questions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__card vcard">
+                    <p class="subtitle fn">Autre moyens de contact</p>
+                    <a href="https://www.google.be/maps/place/Rue+Basse+Voie+78,+4801+Verviers/@50.5789271,5.8931958,17z/data=!3m1!4b1!4m5!3m4!1s0x47c08973d8132cd7:0x3029dd216678a5d8!8m2!3d50.5789271!4d5.8953845?hl=fr"
+                       class="contact__link adr">
+                        <span class="street-address">Rue Basse Voie 78</span>,
+                        <br>
+                        <span class="postal-code">4800</span> <span class="locality">Verviers</span>, <span
+                            class="country-name">Belgique</span>
+                    </a>
+                    <a href="tel:0471614241" class="contact__link">0471 61 42 41</a>
+                    <a href="mailto:noemievincent21@gmail.com" class="contact__link">noemievincent21@gmail.com</a>
+                </div>
+                <a href="#" class="contact__close">
+                    <span class="hidden">Fermer la page de contact</span>
+                </a>
+            </div>
+            <div class="contact__bottom">
+                <div class="container">
+                    <p class="pre" data-number="01">Informations personnelles</p>
+                    <form action="index.html" method="post" class="contact__form contact__form--success form"
+                          novalidate="">
+                        <div class="form__groups">
+                            <div class="form__group form__group--visible" id="who">
+                                <!-- NOM -->
+                                <label for="lastname" class="form__label required">nom</label>
+                                <div class="form__textfield form__textfield--half">
+                                    <input type="text" class="form__textinput" id="lastname" name="lastname"
+                                           placeholder="Stewart">
+                                    <span class="form__textborder" aria-hidden="true"></span>
+                                </div>
+                                <!-- PRENOM -->
+                                <label for="firstname" class="form__label required">prénom</label>
+                                <div class="form__textfield form__textfield--half">
+                                    <input type="text" class="form__textinput" id="firstname" name="firstname"
+                                           placeholder="Julia">
+                                    <span class="form__textborder" aria-hidden="true"></span>
+                                </div>
+                                <!-- SOCIETE -->
+                                <label for="company" class="form__label">société</label>
+                                <div class="form__textfield form__textfield--half">
+                                    <input type="text" class="form__textinput" id="company" name="company"
+                                           placeholder="Julia & Co.">
+                                    <span class="form__textborder" aria-hidden="true"></span>
+                                </div>
+                                <!-- TELEPHONE -->
+                                <label for="tel" class="form__label">prénom</label>
+                                <div class="form__textfield form__textfield--half">
+                                    <input type="text" class="form__textinput" id="tel" name="tel"
+                                           placeholder="+32 484 27 05 55">
+                                    <span class="form__textborder" aria-hidden="true"></span>
+                                </div>
+                                <!-- EMAIL -->
+                                <label for="email" class="form__label required">adresse email</label>
+                                <div class="form__textfield form__textfield--half">
+                                    <input type="email" class="form__textinput" id="email" name="email"
+                                           placeholder="julia.stewart@example.com">
+                                    <span class="form__textborder" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                            <div class="form__group form__group--right" id="subject">
+                                <label for="message" class="form__label">Votre message</label>
+                                <div class="form__textfield form__textfield--half">
+                                    <textarea name="message" id="message" class="form__textarea"
+                                              placeholder="Bonjour,"></textarea>
+                                    <span class="form__textborder" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__navigator">
+                            <a href="#"
+                               class="form__control form__control--disabled form__control--prev">
                         <span class="form__controltext">
                             Précédent                        </span>
-              </a>
-              <button type="submit" class="form__submit form__submit--hidden form__control">
+                            </a>
+                            <button type="submit" class="form__submit form__submit--hidden form__control">
                         <span class="form__controltext">
                             Soumettre                        </span>
-              </button>
-              <a href="#"
-                 class="form__control form__control--disabled form__control--next">
+                            </button>
+                            <a href="#"
+                               class="form__control form__control--disabled form__control--next">
                         <span class="form__controltext">
                             Suivant                        </span>
-              </a>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- FOOTER -->
-  <footer>
-    <div class="footer__top">
-      <div class="container">
-        <div class="footer__container">
-          <a href="#" class="footer__home"><img src="img/logo-vertical.svg" alt="Logo de Noémie Vincent" class="footer__logo"></a>
-          <div class="footer__socials">
-            <ul>
-              <li><a href="#"><img src="./img/facebook.svg" alt="mon Facebook" width="20"></a></li>
-              <li><a href="#"><img src="./img/instagram.svg" alt="mon Instagram" width="20"></a></li>
-              <li><a href="#"><img src="./img/github.svg" alt="mon GitHub" width="20"></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__nav footer__container">
-          <h3 class="footer__title">Liens rapides</h3>
-          <ul class="footer__list">
-            <li class="footer__items">
-              <a href="#about" class="footer__link"><span class="footer__text">À propos</span></a>
-            </li>
-            <li class="footer__items">
-              <a href="#skills" class="footer__link"><span class="footer__text">Compétences</span></a>
-            </li>
-            <li class="footer__items">
-              <a href="#job" class="footer__link"><span class="footer__text">Job idéal</span></a>
-            </li>
-            <li class="footer__items">
-              <a href="#languages" class="fnav__link"><span class="fnav__text">Languages maîtrisés</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__contact footer__container">
-          <h3 class="footer__title">Infos de contact</h3>
-            <div itemscope itemtype="https://schema.org/Person">
-              <p itemprop="name" class="footer__name">Noémie Vincent</p>
-              <p itemprop="email" class="footer__mail mail"><a href="mailto:noemievincent21@gmail.com">noemievincent21@gmail.com</a></p>
-              <p itemprop="telephone" class="footer__tel">0471 61 42 41</p>
-            </div>
-            <div itemscope itemtype="https://schema.org/PostalAddress">
-              <p itemprop="streetAddress" class="footer__adress">Rue Basse Voie, 78</p>
-              <p itemprop="postalCode" class="footer__postal">4800 VERVIERS</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="container">
-        <div class="footer__links">
-          <a href="#">Conditions générales</a>
-          <a href="#">Mentions légales</a>
-          <a href="#">Respect de la vie privée</a>
-          <p id="hepl">projet étudiant pour l'<a href="#">HEPL</a></p>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__container">
+                    <a href="#" class="footer__home"><img src="img/logo.svg" alt="Logo de Noémie Vincent"
+                                                          class="footer__logo"></a>
+                    <div class="footer__socials">
+                        <ul>
+                            <li><a href="#"><img src="./img/facebook.svg" alt="mon Facebook" width="20"></a></li>
+                            <li><a href="#"><img src="./img/instagram.svg" alt="mon Instagram" width="20"></a></li>
+                            <li><a href="#"><img src="./img/github.svg" alt="mon GitHub" width="20"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__nav footer__container">
+                    <h3 class="footer__title">Liens rapides</h3>
+                    <ul class="footer__list">
+                        <li class="footer__items">
+                            <a href="#about" class="footer__link"><span class="footer__text">À propos</span></a>
+                        </li>
+                        <li class="footer__items">
+                            <a href="#skills" class="footer__link"><span class="footer__text">Compétences</span></a>
+                        </li>
+                        <li class="footer__items">
+                            <a href="#job" class="footer__link"><span class="footer__text">Job idéal</span></a>
+                        </li>
+                        <li class="footer__items">
+                            <a href="#languages" class="fnav__link"><span class="fnav__text">Languages maîtrisés</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contact footer__container">
+                    <h3 class="footer__title">Infos de contact</h3>
+                    <div itemscope itemtype="https://schema.org/Person">
+                        <p itemprop="name" class="footer__name">Noémie Vincent</p>
+                        <p itemprop="email" class="footer__mail mail"><a href="mailto:noemievincent21@gmail.com">noemievincent21@gmail.com</a>
+                        </p>
+                        <p itemprop="telephone" class="footer__tel">0471 61 42 41</p>
+                    </div>
+                    <div itemscope itemtype="https://schema.org/PostalAddress">
+                        <p itemprop="streetAddress" class="footer__adress">Rue Basse Voie, 78</p>
+                        <p itemprop="postalCode" class="footer__postal">4800 VERVIERS</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <button class="footer__contact">Contactez-moi</button>
-  </footer>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__links">
+                    <a href="#">Conditions générales</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Respect de la vie privée</a>
+                    <p id="hepl">projet étudiant pour l'<a href="#">HEPL</a></p>
+                </div>
+            </div>
+        </div>
+        <a href="#contact" class="footer__contact btn btn--volt"><span class="btn__label">Contactez-moi</span></a>
+    </footer>
 </main>
 </body>
 </html>
