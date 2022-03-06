@@ -128,7 +128,7 @@
         <figure class="hero__mood">
           <img src="img/carrousel-3.jpg" alt="Dessins sur papier (wireframe)" class="hero__img">
         </figure>
-        <figure class="hero__mood hero__mood--active">
+        <figure class="hero__mood">
           <img src="img/carrousel-4.jpg" alt="Code de programmation" class="hero__img">
         </figure>
         <figure class="hero__mood">
@@ -284,9 +284,7 @@
     <!-- JOB IDÉAL -->
     <section class="job" aria-labelledby="job">
         <div class="job__container container">
-            <div class="job__left">
-                <img src="img/jobideal.jpeg" alt="Un homme travaille devant un ordinateur" class="job__img">
-            </div>
+            <img src="img/jobideal.jpeg" alt="Un homme travaille devant un ordinateur" class="job__img">
             <div class="job__right">
                 <h2 role="heading" aria-level="2" class="job__title pre" id="job" data-number="03">Job idéal</h2>
                 <p class="job__details title">
@@ -301,33 +299,36 @@
     </section>
     <!-- LANGUAGES MAITRISÉS -->
     <section class="languages" aria-labelledby="languages">
-        <h2 role="heading" aria-level="2" class="languages__title" id="languages">Les languages Web que je maîtrise</h2>
-        <button class="languages__btn btn btn--bv-dark"><span class="btn__label">Afficher tous les languages maîtrisés</span></button>
-        <div class="languages__container container">
+        <figure class="languages__fig">
+            <img src="img/languages-bg.jpg" alt="" class="languages__img">
+        </figure>
+        <div class="container languages__container">
+            <h2 role="heading" aria-level="2" class="languages__title" id="languages">Les languages Web que je maîtrise</h2>
+            <button class="languages__btn btn"><span class="btn__label">Afficher tous les languages maîtrisés</span></button>
             <ul class="languages__list">
                 <li class="languages__item">
-                    <img src="img/html-5.png" alt="HTML 5" class="languages__logo" width="200">
+                    <img src="img/html-5.png" alt="HTML 5" class="languages__logo">
                     <p class="languages__name">HTML 5</p>
                 </li>
                 <li class="languages__item">
-                    <img src="img/css-3.png" alt="CSS 3" class="languages__logo" width="200">
+                    <img src="img/css-3.png" alt="CSS 3" class="languages__logo">
                     <p class="languages__name">CSS 3</p>
                 </li>
                 <li class="languages__item">
-                    <img src="img/javascript.png" alt="JavaScript" class="languages__logo" width="200">
-                    <p class="languages__name">JavaScript</p>
+                    <img src="img/javascript.png" alt="JavaScript" class="languages__logo">
+                    <p class="languages__name">JAVASCRIPT</p>
                 </li>
                 <li class="languages__item">
-                    <img src="img/php.png" alt="PHP" class="languages__logo" width="200">
-                    <p class="languages__name">PHP</p>
-                </li>
-                <li class="languages__item">
-                    <img src="img/mysql.png" alt="MySQL" class="languages__logo" width="200">
+                    <img src="img/mysql.png" alt="MySQL" class="languages__logo">
                     <p class="languages__name">MySQL</p>
                 </li>
+                <li class="languages__item">
+                    <img src="img/php.png" alt="PHP" class="languages__logo">
+                    <p class="languages__name">PHP</p>
+                </li>
             </ul>
+            <a href="#contact" class="contact btn btn--volt"><span class="btn__label">Contactez-moi</span></a>
         </div>
-        <a href="#contact" class="contact btn btn--volt"><span class="btn__label">Contactez-moi</span></a>
     </section>
     <!-- CONTACT -->
     <section class="contact" aria-labelledby="contact">
@@ -362,7 +363,7 @@
                     <span class="hidden">Noémie Vincent</span></a>
                 <div class="contact__header">
                     <div class="contact__text">
-                        <h2 role="heading" aria-level="2" class="contact__title" id="contact">Contactez-moi</h2>
+                        <h2 role="heading" aria-level="2" class="contact__title" id="contact">Me contacter</h2>
                         <div class="contact__intro text">
                             <p>Je suis à votre disposition avec de plus amples informations et des réponses à vos
                                 éventuelles questions.</p>
@@ -467,19 +468,23 @@
 <!-- FOOTER -->
 <footer>
     <div class="footer__top">
-        <div class="container">
-            <div class="footer__container">
+        <div class="footer__container container">
+            <div class="footer__logos">
                 <a href="#" class="footer__home"><img src="img/logo.svg" alt="Logo de Noémie Vincent"
                                                       class="footer__logo"></a>
                 <div class="footer__socials">
-                    <ul>
-                        <li><a href="#"><img src="./img/facebook.svg" alt="mon Facebook" width="20"></a></li>
-                        <li><a href="#"><img src="./img/instagram.svg" alt="mon Instagram" width="20"></a></li>
-                        <li><a href="#"><img src="./img/github.svg" alt="mon GitHub" width="20"></a></li>
-                    </ul>
+                    <div class="footer__social social">
+                        <a href="#" class="social__link"><img src="./img/facebook.svg" alt="mon Facebook" width="20"></a>
+                    </div>
+                    <div class="footer__social social">
+                        <a href="#" class="social__link"><img src="./img/instagram.svg" alt="mon Instagram" width="20"></a>
+                    </div>
+                    <div class="footer__social social">
+                        <a href="#" class="social__link"><img src="./img/github.svg" alt="mon GitHub" width="20"></a>
+                    </div>
                 </div>
             </div>
-            <div class="footer__nav footer__container">
+            <div class="footer__nav">
                 <h3 class="footer__title">Liens rapides</h3>
                 <ul class="footer__list">
                     <li class="footer__items">
@@ -492,36 +497,42 @@
                         <a href="#job" class="footer__link"><span class="footer__text">Job idéal</span></a>
                     </li>
                     <li class="footer__items">
-                        <a href="#languages" class="fnav__link"><span class="fnav__text">Languages maîtrisés</span></a>
+                        <a href="#languages" class="footer__link"><span class="fnav__text">Languages maîtrisés</span></a>
                     </li>
                 </ul>
             </div>
-            <div class="footer__contact footer__container">
+            <div class="footer__contact">
                 <h3 class="footer__title">Infos de contact</h3>
                 <div itemscope itemtype="https://schema.org/Person">
-                    <p itemprop="name" class="footer__name">Noémie Vincent</p>
-                    <p itemprop="email" class="footer__mail mail"><a href="mailto:noemievincent21@gmail.com">noemievincent21@gmail.com</a>
+                    <p itemprop="name" class="footer__name footer__link">Noémie Vincent</p>
+                    <p itemprop="email" class="footer__mail mail footer__link"><a href="mailto:noemievincent21@gmail.com" class="footer__link">noemievincent21@gmail.com</a>
                     </p>
-                    <p itemprop="telephone" class="footer__tel">0471 61 42 41</p>
+                    <p itemprop="telephone" class="footer__tel footer__link">0471 61 42 41</p>
                 </div>
                 <div itemscope itemtype="https://schema.org/PostalAddress">
-                    <p itemprop="streetAddress" class="footer__adress">Rue Basse Voie, 78</p>
-                    <p itemprop="postalCode" class="footer__postal">4800 VERVIERS</p>
+                    <p itemprop="streetAddress" class="footer__address footer__link">Rue Basse Voie, 78</p>
+                    <p itemprop="postalCode" class="footer__postal footer__link">4800 VERVIERS</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer__bottom">
         <div class="container">
-            <div class="footer__links">
-                <a href="#">Conditions générales</a>
-                <a href="#">Mentions légales</a>
-                <a href="#">Respect de la vie privée</a>
-                <p id="hepl">projet étudiant pour l'<a href="#">HEPL</a></p>
+            <div class="footer__legals">
+                <div class="footer__links">
+                    <a href="#" class="footer__legal">Conditions générales</a>
+                    <a href="#" class="footer__legal">Mentions légales</a>
+                    <a href="#" class="footer__legal">Respect de la vie privée</a>
+                </div>
+                <p id="hepl">projet étudiant pour l'<a href="#" id="hepl__link">HEPL</a></p>
             </div>
         </div>
     </div>
-    <a href="#contact" class="footer__contact btn btn--volt"><span class="btn__label">Contactez-moi</span></a>
+    <div class="footer__btn">
+        <a href="#contact" class="footer__linkbtn">
+            <img src="img/email.svg" alt="Contactez-moi">
+        </a>
+    </div>
 </footer>
 </body>
 </html>
