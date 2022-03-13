@@ -5,6 +5,7 @@
     padding: 9px 25px 12px;
     border-radius: 40px;
     display: inline-block;
+    border: none;
 }
 
 .btn--simple {
@@ -43,7 +44,7 @@
     transform: none
 }
 
-.btn--volt {
+.btn--filled {
     font-family: hk_groteskmedium, Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -55,7 +56,7 @@
     transform: perspective(1px) translateZ(0);
 }
 
-.btn--volt:before {
+.btn--filled:before {
     transition: transform .3s cubic-bezier(.25, .46, .45, .94);
     content: "";
     display: block;
@@ -71,7 +72,7 @@
     z-index: -1;
 }
 
-.btn--volt:focus:before, .btn--volt:hover:before {
+.btn--filled:focus:before, .btn--filled:hover:before {
     background-color: #FFFFFF;
     opacity: .3;
     text-decoration: none;
@@ -82,6 +83,10 @@
     display: block;
     text-align: center;
     transform: translateZ(0);
+}
+
+.footer__btn {
+    position: fixed;
 }
 
 
