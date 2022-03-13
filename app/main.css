@@ -166,6 +166,7 @@ a {
 
 .logos__img {
     filter: grayscale(1);
+    transition: filter .3s cubic-bezier(.25, .46, .45, .94), -webkit-filter .3s cubic-bezier(.25, .46, .45, .94)
 }
 
 
@@ -218,7 +219,6 @@ a {
     transform: translateY(1px);
     border-bottom-width: 3px;
 }
-
 
 .exp__item {
     display: flex;
@@ -321,6 +321,7 @@ a {
 .job__details, .job__text {
     width: 400px;
     line-height: 38px;
+    margin-left: 100px;
 }
 
 /*LANGUAGES*/
@@ -346,7 +347,11 @@ a {
 .languages__item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+.languages__logo {
+    justify-items: center;
 }
 
 .languages__name {
@@ -369,7 +374,7 @@ a {
 .languages__img {
     display: block;
     width: 100vw;
-    height: 720px;
+    height: 500px;
     opacity: .3;
     -o-object-fit: cover;
     object-fit: cover;
@@ -377,45 +382,29 @@ a {
 
 .languages__content {
     text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.languages__content:before {
+    content: "";
+    display: block;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 75%;
 }
 
 .languages__btn {
-    font-family: hk_grotesksemibold, Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    color: #171F28;
-    border: .0625em solid #DCF000;
-    transition: background .3s cubic-bezier(.25, .46, .45, .94);
-    transform: translateZ(0);
-    position: relative;
-    overflow: hidden;
-    background-color: transparent;
-    margin: 40px 0
-}
-
-.languages__btn:before {
-    transition: transform .3s cubic-bezier(.25, .46, .45, .94);
-    content: "";
-    display: block;
-    background-color: #DCF000;
-    border-radius: 2.5em;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transform: translate3d(-100%, 0, 0);
-    z-index: -1;
-}
-
-.languages__btn:focus:before, .btn--bv-dark:hover:before {
-    background-color: #DCF000;
-    text-decoration: none;
-    transform: none;
+    margin: 50px 0;
 }
 
 .languages__contact {
     margin-top: 50px;
+    box-shadow: 0 0 0 30px #FFFFFF;
+    padding: 0 20px;
+    text-align: center;
 }
 
 /*CONTACT*/
@@ -538,6 +527,7 @@ a {
     position: relative;
     display: inline-block;
     margin-right: 60px;
+    transition: color .2s cubic-bezier(.25, .46, .45, .94)
 }
 
 
@@ -577,6 +567,8 @@ a {
     line-height: 43px;
     margin-bottom: 14px;
     display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: color .2s cubic-bezier(.25, .46, .45, .94), border-bottom-color .2s cubic-bezier(.25, .46, .45, .94);
 }
 
 
@@ -606,36 +598,46 @@ a {
 }
 
 .form__textborder {
-    position: absolute;
-    border-bottom: 1px solid #C8C8C8;
-    border-right: 1px solid #C8C8C8;
-    width: 70%;
-    height: 30%;
-    bottom: 0;
     left: 0;
-    transform: skew(-25deg);
-    z-index: 7;
+    z-index: 2;
+    border-bottom: 1px solid transparent;
+    height: 100%;
+    width: 100%;
 }
 
-#subject .form__textborder {
+.form__textborder, .form__textborder:before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.form__textborder:before {
+    content: "";
+    left: 3px;
+    height: 30%;
+    width: 70%;
+    border-bottom: 1px solid #C8C8C8;
+    border-right: 1px solid #C8C8C8;
+    transform: skew(-25deg);
+    z-index: 4;
+    transition: border-color .2s cubic-bezier(.25, .46, .45, .94)
+}
+
+#subject .form__textborder:before {
     width: 100%;
     left: 20px;
 }
 
-.form__textfield:hover .form__textborder {
+.form__textinput:hover + .form__textborder:before {
     border-color: #3F3F3F;
 }
 
-.form__textarea:focus+.form__textborder, .form__textinput:focus+.form__textborder {
+.form__textarea:focus + .form__textborder:before, .form__textinput:focus + .form__textborder:before {
     border-color: #DCF000;
 }
 
 .form__label:hover {
-    border-bottom: 2px solid #DCF000;
-    margin-top: -2px;
-}
-
-.form__label:hover~.form__textarea:focus~.form__textborder, .form__label:hover~.form__textinput:focus~.form__textborder {
     border-color: #DCF000;
 }
 
@@ -735,11 +737,12 @@ a {
     height: 40px;
     padding: 10px;
     border-radius: 50%;
-    background-color: #262626;
+    background: #262626;
+    transition: background .3s cubic-bezier(.25, .46, .45, .94);
 }
 
 .footer__social:focus, .footer__social:hover {
-    background-color: #3F3F3F;
+    background: #3F3F3F;
 }
 
 .footer__logo {
