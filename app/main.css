@@ -1,9 +1,18 @@
+body:before {
+    content: "This website is under construction.";
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+
 /*TEMPORAIRE*/
 html * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body, html {
+    scroll-behavior: smooth;
     height: 100%;
     min-height: 100%;
     max-width: 100vw;
@@ -350,8 +359,8 @@ a {
     justify-content: flex-end;
 }
 
-.languages__logo {
-    justify-items: center;
+[alt="PHP"]{
+    margin-bottom: 80px;
 }
 
 .languages__name {
@@ -527,12 +536,13 @@ a {
     position: relative;
     display: inline-block;
     margin-right: 60px;
-    transition: color .2s cubic-bezier(.25, .46, .45, .94)
+    border-bottom: 4px solid transparent;
+    transition: border-bottom-color .2s cubic-bezier(.25, .46, .45, .94), color .2s cubic-bezier(.25, .46, .45, .94)
 }
 
 
 .contact__anchor--active, .contact__anchor:focus, .contact__anchor:hover {
-    border-bottom: 4px solid #DCF000;
+    border-bottom-color: #DCF000;
     color: #3F3F3F;
 }
 
@@ -805,13 +815,13 @@ a {
     color: #FFFFFF;
 }
 
-#hepl {
+.footer__hepl {
     font-family: hk_groteskmedium, Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 13px;
 }
 
-#hepl__link {
+.footer__hepl .hepl__link {
     font-family: hk_groteskbold, Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
