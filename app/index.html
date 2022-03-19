@@ -435,8 +435,8 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="contact__close">
-                <span class="hidden">Fermer la page de contact</span>
+            <a href="https://cv.noemie-vincent.be/" class="contact__close">
+                <img src="img/close.svg" alt="Fermer la page de contact" class="close" width="14" height="20">
             </a>
         </div>
         <div class="contact__bottom">
@@ -451,7 +451,7 @@
                 <form action="index.html" method="post" class="contact__form contact__form--success form"
                       novalidate="">
                     <div class="form__groups">
-                        <div class="form__group form__group--hiddn form__group--grid" id="who">
+                        <div class="form__group form__group--visible form__group--grid" id="who">
                             <!-- NOM -->
                             <div class="form__textfield">
                                 <label for="lastname" class="form__label required">nom</label>
@@ -488,7 +488,7 @@
                                 <span class="form__textborder" aria-hidden="true"></span>
                             </div>
                         </div>
-                        <div class="form__group form__group--visible" id="subject">
+                        <div class="form__group form__group--hidden" id="subject">
                             <div class="form__textfield">
                                 <label for="message" class="form__label">Votre message</label>
                                 <textarea name="message" id="message" class="form__textarea"
@@ -541,7 +541,7 @@
     </section>
 </main>
 <!-- FOOTER -->
-<footer>
+<footer class="footer">
     <div class="footer__top">
         <div class="footer__container container">
             <div class="footer__logos">
@@ -616,7 +616,7 @@
         </div>
     </div>
     <div class="footer__btn">
-        <a href="#contact" class="footer__linkbtn">
+        <a href="#contact" class="footer__btn">
             <img src="img/email.svg" alt="Contactez-moi">
         </a>
     </div>

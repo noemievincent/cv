@@ -5,7 +5,10 @@ body:before {
     text-align: center;
 }
 
-
+.contact {
+    /*visibility: hidden;*/
+    /*opacity: 0;*/
+}
 /*TEMPORAIRE*/
 html * {
     box-sizing: border-box;
@@ -443,10 +446,33 @@ a {
 }
 
 /*CONTACT*/
+.contact {
+    background-color: #FFFFFF;
+    /*position: fixed;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+.contact__close {
+    position: absolute;
+    top: 80px;
+    right: 130px;
+    transition: transform .3s cubic-bezier(.25, .46, .45, .94), color .3s cubic-bezier(.25, .46, .45, .94);
+}
+
+.contact__close:hover, .contact__close:focus {
+    transform: rotate(180deg);
+}
 /*TOP*/
 .contact__top {
     padding: 32px 0 75px;
     background: #F2F2F2;
+    position: relative;
 }
 
 .contact__flex {
@@ -744,8 +770,10 @@ a {
 
 
 /*FOOTER*/
+.footer {
+    position: relative;
+}
 /*TOP*/
-
 .footer__top {
     background-color: #313030;
     padding: 70px 0;
