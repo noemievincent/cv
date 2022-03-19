@@ -301,21 +301,47 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
 }
 
-.skills__bar:after {
+.skills__bar:before {
     content: attr(data-number);
     font-family: hk_groteskbold, Helvetica, Arial, sans-serif;
     display: inline-block;
     color: #DCF000;
     margin-bottom: 6px;
+    z-index: 1;
 }
 
-/*.skills__bar:before {*/
-/*    content: "";*/
-/*    background-color: #383838;*/
-/*    width: 40px;*/
-/*}*/
+.skills__bar--gray:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #383838;
+    width: 40px;
+    height: 100%;
+    animation: growBar 2s;
+}
+
+.div1:before, .div4:before {
+    height: 66%;
+}
+.div2:before {
+    height: 88%;
+}
+.div5:before {
+    height: 77%;
+}
+.div7:before {
+    height: 57%;
+}
+
+@keyframes growBar {
+    from {
+        height: 0;
+    }
+}
 
 /*JOB IDEAL*/
 .job__img {
