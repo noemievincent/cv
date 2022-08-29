@@ -1,18 +1,6 @@
 @import "_reset.css";
 @import "fonts.css";
 
-@import "partials/buttons";
-@import "partials/hero";
-@import "partials/header";
-@import "partials/about";
-@import "partials/exp";
-@import "partials/skills";
-@import "partials/job";
-@import "partials/projects";
-@import "partials/contact";
-@import "partials/footer";
-
-/*TEMPORAIRE*/
 $browser-context: 16; // Default
 
 @function em($pixels, $context: $browser-context) {
@@ -54,9 +42,9 @@ a {
     position: absolute;
     overflow: hidden;
     clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
+    height: em(1, 16);
+    width: em(1, 16);
+    margin: em(-1, 16);
     padding: 0;
     border: 0;
 }
@@ -68,36 +56,36 @@ a {
     text-transform: uppercase;
     color: #7C7A7A;
     font-size: em(13, 16);
-    letter-spacing: 1px;
-    position: relative;
-    margin-bottom: 13px;
-    margin-left: 59px;
+    letter-spacing: em(1, 13);
+    margin-bottom: em(13, 13);
+    margin-left: em(60, 13);
+    display: flex;
+    align-items: center;
+    gap: em(13, 13);
 }
 
 .pre:after {
     content: "";
     display: block;
-    width: 47px;
-    height: 2px;
+    width: em(47, 13);
+    height: em(2, 13);
     background-image: url(../../img/dot-line.svg);
     background-repeat: repeat-x;
-    position: absolute;
-    left: 42px;
-    top: 15px;
+    order: -1;
 }
 
 .pre:before {
     content: attr(data-number);
     display: inline-block;
     color: #DCF000;
-    margin-right: 73px;
     background-color: #FFFFFF;
-    padding: 8px 6px 9px;
-    border-radius: 50px;
+    padding: em(8, 13) em(6, 13) em(9, 13);
+    border-radius: em(50, 13);
+    order: -2;
 }
 
 .container {
-    max-width: 73.125em;
+    max-width: em(1170, 16);
     width: 100%;
     margin: 0 auto;
 }
@@ -106,12 +94,12 @@ a {
     font-family: hk_grotesksemibold, Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 24px;
-    line-height: 44px;
-    margin-bottom: 30px;
+    font-size: em(24, 16);
+    line-height: em(44, 24);
+    margin-bottom: em(30, 24);
     color: #3F3F3F;
-    margin-left: 100px;
-    width: 485px;
+    margin-left: em(100, 24);
+    width: em(485, 24);
 }
 
 .text {
@@ -119,21 +107,23 @@ a {
     font-weight: 400;
     font-style: normal;
     color: #7C7A7A;
-    line-height: 1.6875em;
-}
-
-.required:after {
-    content: "*";
-    margin-left: 5px;
-}
-
-::placeholder {
-    color: #C8C8C8;
+    line-height: em(27, 16);
 }
 
 :focus {
     outline: none;
 }
+
+@import "partials/buttons"; //em ok
+@import "partials/contact"; //em ok
+@import "partials/hero"; //em ok
+@import "partials/header"; //em ok
+@import "partials/about"; //em ok
+@import "partials/exp"; //em ok
+@import "partials/skills"; //em ok
+@import "partials/job"; //em ok
+@import "partials/projects"; //em ok
+@import "partials/footer"; //em ok
 
 /* MEDIA QUERIES */
 /*460px*/

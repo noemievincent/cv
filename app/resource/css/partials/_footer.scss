@@ -1,29 +1,26 @@
 .footer__top {
   background-color: #313030;
-  padding: 70px 0;
+  padding: em(70, 16) 0;
 }
 
 .footer__container {
   display: flex;
   justify-content: flex-start;
-}
-
-.footer__container > * {
-  margin-right: 190px;
+  gap: em(190, 16);
 }
 
 .footer__socials {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: em(30, 16);
 }
 
 .footer__social {
   display: block;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
+  width: em(40, 16);
+  height: em(40, 16);
+  padding: em(10, 16);
   border-radius: 50%;
   background: #262626;
   transition: background .3s cubic-bezier(.25, .46, .45, .94);
@@ -34,20 +31,20 @@
 }
 
 .footer__logo {
-  width: 140px;
-  height: 70px;
+  width: em(140, 16);
+  height: em(70, 16);
 }
 
 .footer__title {
   font-family: hk_grotesksemibold, Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: em(13, 16);
   font-style: normal;
   color: #FFFFFF;
   text-transform: uppercase;
-  letter-spacing: 1.4px;
-  line-height: 26px;
-  margin-bottom: 20px;
+  letter-spacing: em(1.4, 13);
+  line-height: em(26, 13);
+  margin-bottom: em(20, 13);
 }
 
 .footer__link {
@@ -55,10 +52,9 @@
   font-weight: 400;
   font-style: normal;
   color: #7C7A7A;
-  font-size: 16px;
-  line-height: 27px;
+  line-height: em(27, 16);
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: em(17, 16);
   transition: color .3s cubic-bezier(.25, .46, .45, .94)
 }
 
@@ -66,9 +62,8 @@
   color: #C0C0C0;
 }
 
-/*BOTTOM*/
 .footer__bottom {
-  padding: 20px 0;
+  padding: em(20, 16) 0;
   background-color: #262626;
 }
 
@@ -78,28 +73,23 @@
   align-items: center;
 }
 
-.footer__legals, .footer__legals a {
+.footer__hepl, .footer__legals a {
   font-family: hk_groteskregular, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: hsla(0, 0%, 100%, .6);
-  font-size: 13px;
-  margin-right: 16px;
+  font-size: em(13, 16);
+  margin-right: em(16, 13);
   transition: color .3s cubic-bezier(.25, .46, .45, .94);
-  line-height: 26px;
+  line-height: em(26, 13);
 }
 
 .footer__legal:hover {
   color: #FFFFFF;
 }
 
-.footer__hepl {
-  font-family: hk_groteskmedium, Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-}
-
 .footer__hepl .hepl__link {
+  font-size: em(13, 13);
   font-family: hk_groteskbold, Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: hsla(0,0%,100%,.6);

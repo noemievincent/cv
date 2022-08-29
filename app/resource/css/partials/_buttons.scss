@@ -1,8 +1,7 @@
 .btn {
-  font-size: 16px;
-  line-height: 27px;
-  padding: 12px 24px;
-  border-radius: 40px;
+  line-height: em(27, 16);
+  padding: em(12, 16) em(24, 16);
+  border-radius: em(40, 16);
   display: inline-block;
 }
 
@@ -11,14 +10,14 @@
   font-weight: 500;
   font-style: normal;
   color: #3F3F3F;
-  border: 1px solid #3F3F3F;
+  border: em(1, 16) solid #3F3F3F;
   transform: translateZ(0);
   position: relative;
   overflow: hidden;
 }
 
 .btn--simple:before {
-  content: "";
+  content: '';
   display: block;
   background-color: #3F3F3F;
   position: absolute;
@@ -29,7 +28,7 @@
   transform: translate3d(-100%, 0, 0);
   transition: transform .3s cubic-bezier(.25, .46, .45, .94);
   z-index: -1;
-  border-radius: 40px;
+  border-radius: em(40, 16);
 }
 
 .btn--simple:focus, .btn--simple:hover {
@@ -51,16 +50,16 @@
   transition: background .3s cubic-bezier(.25, .46, .45, .94);
   position: relative;
   overflow: hidden;
-  transform: perspective(1px) translateZ(0);
+  transform: perspective(em(1, 16)) translateZ(0);
 }
 
 .btn--filled:before {
   transition: transform .3s cubic-bezier(.25, .46, .45, .94);
-  content: "";
+  content: '';
   display: block;
   background-color: #FFFFFF;
   opacity: .3;
-  border-radius: 40px;
+  border-radius: em(40, 16);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -82,7 +81,7 @@
   font-weight: 500;
   font-style: normal;
   color: #171F28;
-  border: 1px solid #DCF000;
+  border: em(1, 16) solid #DCF000;
   transition: background .3s cubic-bezier(.25, .46, .45, .94);
   transform: translateZ(0);
   position: relative;
@@ -92,10 +91,10 @@
 
 .btn--stroked:before {
   transition: transform .3s cubic-bezier(.25, .46, .45, .94);
-  content: "";
+  content: '';
   display: block;
   background-color: #DCF000;
-  border-radius: 40px;
+  border-radius: em(40, 16);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -119,17 +118,17 @@
 
 .footer__btn {
   background-color: #DCF000;
-  width: 70px;
-  height: 70px;
+  width: em(70, 16);
+  height: em(70, 16);
   text-align: center;
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  box-shadow: 0 0 .625em 0 rgba(23, 31, 40, .1);
+  box-shadow: 0 0 em(10, 16) 0 rgba(23, 31, 40, .1);
   position: fixed;
   z-index: 9;
-  bottom: 1.875em;
-  right: 1.875em;
+  bottom: em(30, 16);
+  right: em(30, 16);
 }
 
 .footer__btn img {

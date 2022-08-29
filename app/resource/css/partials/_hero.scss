@@ -5,7 +5,7 @@
 }
 
 .hero__container {
-  min-height: 850px;
+  min-height: em(850, 16);
   height: 100vh;
   position: relative;
   z-index: 0;
@@ -15,7 +15,7 @@
   position: relative;
   width: 100%;
   margin-left: 5.9829059829%;
-  margin-top: 200px;
+  margin-top: em(200, 16);
   z-index: 1;
   display: inline-block;
   vertical-align: middle;
@@ -25,13 +25,13 @@
   font-family: hk_groteskbold, Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 80px;
-  line-height: 100px;
+  font-size: em(80, 16);
+  line-height: em(100, 80);
   color: #FFFFFF;
 }
 
 .hero__sub {
-  margin: 35px 0 80px;
+  margin: em(35, 16) 0 em(80, 16);
   position: relative;
   text-transform: capitalize;
 }
@@ -40,9 +40,9 @@
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
+  height: em(1, 16);
+  width: em(1, 16);
+  margin: em(-1, 16);
   padding: 0;
   border: 0;
 }
@@ -51,15 +51,15 @@
   font-family: hk_groteskregular, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
-  line-height: 73px;
+  font-size: em(40, 16);
+  line-height: em(73, 40);
   color: #C0C0C0;
 }
 
 .hero__steps {
   display: inline-block;
   vertical-align: top;
-  height: 42px;
+  height: em(42, 16);
   position: relative;
   transition: width .2s cubic-bezier(.25, .46, .45, .94) .18s, height .2s cubic-bezier(.25, .46, .45, .94) .18s
 }
@@ -68,8 +68,8 @@
   font-family: hk_groteskregular, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 23px;
-  line-height: 42px;
+  font-size: em(23, 16);
+  line-height: em(42, 23);
   color: #FFFFFF;
   white-space: nowrap;
   top: 0;
@@ -142,9 +142,9 @@
   font-family: hk_groteskmedium, Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 13px;
+  font-size: em(13, 16);
   text-transform: uppercase;
-  letter-spacing: .6px;
+  letter-spacing: em(.6, 13);
   color: #FFFFFF;
   visibility: hidden;
   opacity: 0
@@ -175,22 +175,22 @@
   font: inherit;
   padding: 0;
   border: none;
-  width: 50px;
-  height: 50px;
+  width: em(50, 16);
+  height: em(50, 16);
   border-radius: 0;
   overflow: hidden;
-  margin: -25px 0 0 -25px;
+  margin: em(-25, 16) 0 0 em(-25, 16);
   cursor: pointer;
   z-index: 2;
-  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7") 0 0 repeat;
+  background: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7') 0 0 repeat;
 }
 
 .hero__point--visible {
-  overflow: visible
+  overflow: visible;
 }
 
 .hero__point--visible:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -198,10 +198,10 @@
   bottom: 0;
   left: 0;
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
+  width: em(12, 16);
+  height: em(12, 16);
   margin: auto;
-  background: #7C7A7A
+  background: #7C7A7A;
 }
 
 .hero__point--visible.hero__point--last:before, .hero__point--visible:before {
@@ -224,7 +224,7 @@
 }
 
 .hero__point--visible .hero__label {
-  transform: translate3d(-50%, 10px, 0);
+  transform: translate3d(-50%, em(10, 13), 0);
   transition: opacity .3s cubic-bezier(.25, .46, .45, .94), transform .3s cubic-bezier(.25, .46, .45, .94), visibility 0s linear .3s
 }
 
@@ -309,11 +309,11 @@
 }
 
 .hero__steps:after {
-  content: "";
+  content: '';
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
+  height: em(2, 16);
   background: #DCF000
 }
 
@@ -332,13 +332,13 @@
 }
 
 .hero__invite:after {
-  content: "";
+  content: '';
   display: block;
   clear: right
 }
 
 .hero__invite:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -349,7 +349,8 @@
 }
 
 .hero__scroll {
-  padding: 29px 50px;
+  font-size: em(13, 16);
+  padding: em(29, 13) em(50, 13);
   background: #FFFFFF;
   float: right;
   display: block;
@@ -358,21 +359,20 @@
   font-weight: 700;
   font-style: normal;
   color: #A4A4A4;
-  font-size: 13px;
-  line-height: 20px;
+  line-height: em(20, 13);
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: em(1, 13);
 }
 
 .hero__scroll:before {
-  width: 63px;
+  width: em(63, 13);
   right: 99%;
   background: url(../../../img/hero-scroll-border.svg) no-repeat 100%
 }
 
 .hero__scroll:after, .hero__scroll:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -380,8 +380,8 @@
 }
 
 .hero__scroll:after {
-  width: 2px;
-  height: 30px;
+  width: em(2, 13);
+  height: em(30, 13);
   background: url(../../../img/dot-line-vertical.svg) repeat-y 50%;
   right: 0;
   margin: auto 0;

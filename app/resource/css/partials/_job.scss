@@ -1,5 +1,5 @@
 .job__img {
-  height: 700px;
+  height: em(700, 16);
 }
 
 .job__container {
@@ -8,7 +8,7 @@
 }
 
 .job__details, .job__text {
-  width: 400px;
-  line-height: 38px;
-  margin-left: 100px;
+  width: em(400, 16);
+  line-height: em(38, 16);
+  margin-left: em(100, 16);
 }

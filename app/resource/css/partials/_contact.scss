@@ -1,8 +1,12 @@
-@import "form";
+@import 'form';
+
+.contact--show {
+  overflow: hidden;
+}
 
 .contact {
   background-color: #FFFFFF;
-  /*position: fixed;*/
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -10,12 +14,24 @@
   overflow-y: scroll;
   overflow-x: hidden;
   z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(1.875em);
+  transition: visibility 0ms .3s, opacity .3s cubic-bezier(.25, .46, .45, .94), transform .3s cubic-bezier(.25, .46, .45, .94);
+}
+
+.contact--show .contact {
+  visibility: visible;
+  transition: visibility 0ms 0ms, opacity .3s cubic-bezier(.25, .46, .45, .94), transform .3s cubic-bezier(.25, .46, .45, .94);
+}
+
+.contact--show .contact, .contact--show .form {
+  opacity: 1;
+  transform: none;
 }
 
 .contact__close {
-  position: absolute;
-  top: 80px;
-  right: 130px;
+  height: 100%;
   transition: transform .3s cubic-bezier(.25, .46, .45, .94), color .3s cubic-bezier(.25, .46, .45, .94);
 }
 
@@ -23,62 +39,72 @@
   transform: rotate(180deg);
 }
 
+.contact__logo {
+  width: em(100, 16);
+  display: block;
+}
+
+.contact__header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact__header {
+  margin-top: em(60, 16);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 em(100, 16);
+}
+
 .contact__top {
-  padding: 32px 0 75px;
+  padding: em(32, 16) 0 em(75, 16);
   background: #F2F2F2;
   position: relative;
 }
 
-.contact__flex {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1170px;
-  margin-top: 60px;
+.contact__container {
+  max-width: em(1170, 16);
 }
 
 .contact__card {
-  width: 325px;
-  position: relative
+  position: relative;
 }
 
-.contact__card:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -80px;
-  width: 2px;
+.contact__separator {
+  left: em(-80, 16);
+  width: em(2, 16);
+  min-height: 100%;
   background-image: url(../../../img/dot-line-vertical.svg);
 }
 
 .contact__text {
-  width: 350px;
+  width: em(350, 16);
 }
 
 .contact__title {
   font-family: hk_groteskbold, Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 48px;
-  line-height: 50px;
+  font-size: em(48, 16);
+  line-height: em(50, 48);
   color: #3F3F3F;
-  margin-bottom: 17px;
+  margin-bottom: em(17, 48);
 }
 
 .contact__subtitle {
   text-transform: uppercase;
   color: #7C7A7A;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  margin-bottom: 30px;
+  font-size: em(13, 16);
+  letter-spacing: em(1.5, 13);
+  margin-bottom: em(30, 13);
 }
 
 .contact__link {
   color: #3F3F3F;
   display: block;
-  line-height: 25px;
-  margin-top: 18px;
+  line-height: em(25, 16);
+  margin-top: em(18, 16);
 }
 
 .contact__link:focus, .contact__link:hover {
@@ -88,14 +114,14 @@
 .contact__bottom {
   position: relative;
   background: #FFFFFF;
-  padding-top: 25px;
+  padding-top: em(25, 16);
 }
 
 .contact__bottom:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
-  height: 70px;
+  height: em(70, 16);
   background-color: #F2F2F2;
   right: 0;
   top: 0;
@@ -103,12 +129,12 @@
 }
 
 .contact__bottom .container:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
-  height: 70px;
-  width: 870px;
-  left: 500px;
+  height: em(70, 16);
+  width: em(870, 16);
+  left: em(500, 16);
   top: 0;
   background-image: url(../../../img/gray-cutout.svg);
   background-repeat: no-repeat;
@@ -116,32 +142,24 @@
 }
 
 .contact__bottom .pre {
-  display: block;
-  width: 30%;
-  margin-bottom: 15px;
   overflow: hidden;
 }
 
-.contact__nav {
-  margin-right: 60px;
-  /*visibility: hidden*/
-}
-
 .contact__menu {
-  display: flex;
   position: relative;
   z-index: 10;
-  justify-content: space-between;
-  margin: 0 50px;
+  display: flex;
+  gap: em(160, 16);
+  margin: 0 em(50, 16);
 }
 
 .contact__anchor {
   color: #7C7A7A;
-  padding: 0 0 27px;
+  padding: 0 0 em(27, 16);
   position: relative;
   display: inline-block;
-  margin-right: 60px;
-  border-bottom: 4px solid transparent;
+  margin-right: em(60, 16);
+  border-bottom: em(4, 16) solid transparent;
   transition: border-bottom-color .2s cubic-bezier(.25, .46, .45, .94), color .2s cubic-bezier(.25, .46, .45, .94)
 }
 

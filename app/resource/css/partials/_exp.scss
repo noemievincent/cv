@@ -1,23 +1,23 @@
 .exp {
-  margin-top: 100px;
+  margin-top: em(100, 16);
   background-image: url(../../../img/dot-grid.svg);
-  background-size: 8px;
+  background-size: em(8, 16);
   position: relative;
 }
 
 .exp__controls {
   position: absolute;
-  bottom: 50px;
-  left: 700px;
+  bottom: em(50, 16);
+  left: em(700, 16);
   z-index: 5
 }
 
 .exp__control {
   display: inline-block;
-  height: 14px;
-  width: 30px;
-  border-bottom: 1px solid #D4D3D3;
-  margin-right: 7px;
+  height: em(14, 16);
+  width: em(30, 16);
+  border-bottom: em(1, 16) solid #D4D3D3;
+  margin-right: em(7, 16);
   position: relative;
   transition: border-color .3s cubic-bezier(.25, .46, .45, .94), border-width .2s cubic-bezier(.25, .46, .45, .94), transform .2s cubic-bezier(.25, .46, .45, .94)
 }
@@ -30,7 +30,7 @@
   left: 0;
   top: 100%;
   z-index: 2;
-  height: 15px;
+  height: em(15, 16);
 }
 
 .exp__control--active {
@@ -38,8 +38,8 @@
 }
 
 .exp__control:focus, .exp__control:hover {
-  transform: translateY(1px);
-  border-bottom-width: 3px;
+  transform: translateY(em(1, 16));
+  border-bottom-width: em(3, 16);
 }
 
 .exp__item {
@@ -47,7 +47,7 @@
   justify-content: space-around;
   opacity: 0;
   pointer-events: none;
-  padding: 30px 80px;
+  padding: em(30, 16) em(80, 16);
 }
 
 .exp__item--show {
@@ -62,16 +62,16 @@
 .exp__text {
   font-family: hk_grotesklight, Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 25px;
-  line-height: 40px;
+  font-size: em(25, 16);
+  line-height: em(40, 25);
   color: #7C7A7A;
-  width: 530px;
+  width: em(530, 25);
 }
 
 .exp__date {
   font-family: hk_grotesksemibold, Helvetica, Arial, sans-serif;
-  font-size: 68px;
-  width: 150px;
+  font-size: em(68, 16);
+  width: em(150, 68);
   text-align: center;
-  line-height: 100px;
+  line-height: em(100, 68);
 }
