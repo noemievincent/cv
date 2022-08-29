@@ -15,7 +15,7 @@
   \*****************************/
 /***/ (() => {
 
-eval("document.body.classList.remove('no-js');\nconsole.log(\"hello\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZS9qcy9tYWluLmpzLmpzIiwibmFtZXMiOlsiZG9jdW1lbnQiLCJib2R5IiwiY2xhc3NMaXN0IiwicmVtb3ZlIiwiY29uc29sZSIsImxvZyJdLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcHJvamV0LWN2Ly4vcmVzb3VyY2UvanMvbWFpbi5qcz8yYTBjIl0sInNvdXJjZXNDb250ZW50IjpbImRvY3VtZW50LmJvZHkuY2xhc3NMaXN0LnJlbW92ZSgnbm8tanMnKTtcblxuY29uc29sZS5sb2coXCJoZWxsb1wiKSJdLCJtYXBwaW5ncyI6IkFBQUFBLFFBQVEsQ0FBQ0MsSUFBVCxDQUFjQyxTQUFkLENBQXdCQyxNQUF4QixDQUErQixPQUEvQjtBQUVBQyxPQUFPLENBQUNDLEdBQVIsQ0FBWSxPQUFaIn0=\n//# sourceURL=webpack-internal:///./resource/js/main.js\n");
+eval("document.body.classList.remove('no-js');\nconsole.log(\"hello\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJkb2N1bWVudCIsImJvZHkiLCJjbGFzc0xpc3QiLCJyZW1vdmUiLCJjb25zb2xlIiwibG9nIl0sInNvdXJjZXMiOlsid2VicGFjazovL3Byb2pldC1jdi8uL3Jlc291cmNlL2pzL21haW4uanM/MmEwYyJdLCJzb3VyY2VzQ29udGVudCI6WyJkb2N1bWVudC5ib2R5LmNsYXNzTGlzdC5yZW1vdmUoJ25vLWpzJyk7XG5cbmNvbnNvbGUubG9nKFwiaGVsbG9cIikiXSwibWFwcGluZ3MiOiJBQUFBQSxRQUFRLENBQUNDLElBQVQsQ0FBY0MsU0FBZCxDQUF3QkMsTUFBeEIsQ0FBK0IsT0FBL0I7QUFFQUMsT0FBTyxDQUFDQyxHQUFSLENBQVksT0FBWiIsImZpbGUiOiIuL3Jlc291cmNlL2pzL21haW4uanMuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resource/js/main.js\n");
 
 /***/ }),
 

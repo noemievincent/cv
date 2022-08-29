@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Projet CV",
   "main": "webpack.mix.js",
+  "private": true,
   "scripts": {
     "dev": "npm run development",
     "development": "mix",
@@ -16,8 +17,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
+    "axios": "^0.21",
     "browser-sync": "^2.27.7",
     "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0",
     "laravel-mix": "^6.0.39",
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.43.4",
