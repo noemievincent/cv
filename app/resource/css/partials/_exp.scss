@@ -1,0 +1,77 @@
+.exp {
+  margin-top: 100px;
+  background-image: url(../../../img/dot-grid.svg);
+  background-size: 8px;
+  position: relative;
+}
+
+.exp__controls {
+  position: absolute;
+  bottom: 50px;
+  left: 700px;
+  z-index: 5
+}
+
+.exp__control {
+  display: inline-block;
+  height: 14px;
+  width: 30px;
+  border-bottom: 1px solid #D4D3D3;
+  margin-right: 7px;
+  position: relative;
+  transition: border-color .3s cubic-bezier(.25, .46, .45, .94), border-width .2s cubic-bezier(.25, .46, .45, .94), transform .2s cubic-bezier(.25, .46, .45, .94)
+}
+
+.exp__control:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100%;
+  z-index: 2;
+  height: 15px;
+}
+
+.exp__control--active {
+  border-color: #3F3F3F
+}
+
+.exp__control:focus, .exp__control:hover {
+  transform: translateY(1px);
+  border-bottom-width: 3px;
+}
+
+.exp__item {
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  pointer-events: none;
+  padding: 30px 80px;
+}
+
+.exp__item--show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.exp__item--next {
+  display: none;
+}
+
+.exp__text {
+  font-family: hk_grotesklight, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 40px;
+  color: #7C7A7A;
+  width: 530px;
+}
+
+.exp__date {
+  font-family: hk_grotesksemibold, Helvetica, Arial, sans-serif;
+  font-size: 68px;
+  width: 150px;
+  text-align: center;
+  line-height: 100px;
+}

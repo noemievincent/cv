@@ -1,0 +1,141 @@
+.header {
+  height: 145px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: 50px;
+  margin: 0 50px;
+}
+
+.header__right .btn + .btn {
+  margin-left: 8px;
+}
+
+.header__right .btn--simple:focus, .header__right .btn--simple:hover {
+  color: #FFFFFF;
+}
+
+.header__container, .header__left, .header__mobile {
+  display: flex;
+  align-items: center;
+}
+
+.header__mobile {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav__link {
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 7px 10px;
+  position: relative;
+  transition: color .3s cubic-bezier(.25, .46, .45, .94);
+  margin-left: 10px;
+}
+
+.nav__text {
+  position: relative;
+  z-index: 2;
+}
+
+.nav__link--active {
+  border: 1px solid #7C7A7A;
+  border-radius: 50px;
+}
+
+.nav__link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #7C7A7A;
+  border-radius: 50px;
+  transition: transform .3s cubic-bezier(.075, .82, .165, 1), opacity .3s cubic-bezier(.25, .46, .45, .94), background .3s cubic-bezier(.25, .46, .45, .94);
+  transform: scale(.2);
+  opacity: 0;
+}
+
+.nav__link:hover:before, .nav__link:focus:before {
+  transform: none;
+  opacity: 1;
+}
+
+.nav__link--active:before {
+  background: transparent;
+  transform: none;
+  opacity: 1;
+}
+
+.nav__link--active:hover:before, .nav__link--active:focus:before {
+  background: #7C7A7A;
+}
+
+.lang {
+  vertical-align: top;
+  width: 52px;
+  text-align: center;
+  padding: 0;
+}
+
+.lang__current {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #171F28;
+  font-size: 13px;
+  width: 100%;
+  padding: 12px;
+}
+
+.header .lang {
+  border-color: #7C7A7A;
+}
+
+.header .lang__current {
+  color: #FFFFFF;
+}
+
+.header .header__contact {
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #DCF000;
+  transition: color .3s cubic-bezier(.25, .46, .45, .94), transform .3s cubic-bezier(.25, .46, .45, .94), opacity .3s cubic-bezier(.25, .46, .45, .94)
+}
+
+.header .header__contact:before {
+  opacity: 1;
+  background-color: #DCF000
+}
+
+.header .header__contact:focus, .header .header__contact:hover {
+  color: #3F3F3F;
+}
+
+.header .header__contact:focus:before, .header .header__contact:hover:before {
+  opacity: 1;
+  background-color: #DCF000;
+}
+
+.header__menu, .toggle {
+  display: none;
+}
+
+.header__menu:after, .header__menu:before {
+  content: "";
+  display: block;
+  width: 1.5625em;
+  height: .125em;
+  background: #3F3F3F;
+  transform-origin: center center;
+  border-radius: .125em;
+  transition: transform .3s cubic-bezier(.25, .46, .45, .94), background .3s cubic-bezier(.25, .46, .45, .94), margin .3s cubic-bezier(.25, .46, .45, .94), width .3s cubic-bezier(.25, .46, .45, .94)
+}
+
+.header__menu:after {
+  margin-top: .25em
+}

@@ -1,0 +1,14 @@
+.job__img {
+  height: 700px;
+}
+
+.job__container {
+  display: flex;
+  justify-content: center;
+}
+
+.job__details, .job__text {
+  width: 400px;
+  line-height: 38px;
+  margin-left: 100px;
+}
