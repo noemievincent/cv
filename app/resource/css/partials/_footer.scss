@@ -98,3 +98,23 @@
 .footer__hepl:hover .hepl__link {
   color: #FFFFFF;
 }
+
+.socials-svg {
+  width: em(18, 16);
+  height: em(18, 16);
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.social__link, .footer__contact-link {
+  border-radius: 50%;
+}
+
+.footer__contact-svg {
+  padding: em(20, 16);
+}
