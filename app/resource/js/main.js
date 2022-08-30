@@ -8,6 +8,14 @@ function handleContactForm() {
     const contactBtns = document.querySelectorAll('.showContact');
     const closeBtn = document.querySelector('.contact__close');
     const openMenuCheckbox = document.querySelector(".toggle");
+    const moreInfosBtn = document.querySelector('.contact__expander-link');
+    const moreInfosContainer = document.querySelector('.contact__container');
+    const moreInfosText = document.querySelector('.contact__expander-text');
+
+    moreInfosBtn.addEventListener('click', (e) => {
+        moreInfosContainer.classList.toggle('contact__expander--expanded');
+        [moreInfosText.textContent, moreInfosText.dataset.text] = [moreInfosText.dataset.text, moreInfosText.textContent];
+    })
 
     contactBtns.forEach((btn) => {
         btn.addEventListener('click', (e) => {

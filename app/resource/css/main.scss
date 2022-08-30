@@ -65,6 +65,7 @@ a {
     margin-left: em(60, 13);
     display: flex;
     align-items: center;
+    align-self: start;
     gap: em(13, 13);
 }
 
@@ -153,9 +154,24 @@ a {
 
 
 /*640px*/
+@media (max-width: 640px) {
 
+}
 
 /*760px*/
+@media (max-width: 760px) {
+    .contact__expander {
+        display: block;
+    }
+
+    .contact__card {
+        display: none;
+    }
+
+    .contact__expander--expanded .contact__card {
+        display: block;
+    }
+}
 
 
 /*920px*/
@@ -237,13 +253,11 @@ a {
 
     .contact__header {
         flex-direction: column;
-        gap: em(16, 16);
+        gap: em(30, 16);
     }
 
     .contact__separator {
-        min-width: 100%;
-        height: 2px;
-        background-image: url(../../img/dot-line.svg);
+        display: none;
     }
 
     .form__group.form__group--grid {
@@ -266,6 +280,10 @@ a {
     .contact__menu {
         margin: 0;
         gap: em(85, 16);
+    }
+
+    .contact__text {
+        width: 100%;
     }
 
     .contact__bottom:before {
