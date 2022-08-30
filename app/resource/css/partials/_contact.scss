@@ -65,6 +65,7 @@
 
 .contact__container {
   max-width: em(1170, 16);
+  margin: 0 auto;
 }
 
 .contact__card {
@@ -114,7 +115,6 @@
 .contact__bottom {
   position: relative;
   background: #FFFFFF;
-  padding-top: em(25, 16);
 }
 
 .contact__bottom:before {
@@ -123,22 +123,11 @@
   position: absolute;
   height: em(70, 16);
   background-color: #F2F2F2;
-  right: 0;
+  right: em(-20, 16);
   top: 0;
-  width: 50%;
-}
-
-.contact__bottom .container:before {
-  content: '';
-  display: block;
-  position: absolute;
-  height: em(70, 16);
-  width: em(870, 16);
-  left: em(500, 16);
-  top: 0;
-  background-image: url(../../../img/gray-cutout.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%
+  width: 65%;
+  transform: skew(25deg);
+  border-bottom-left-radius: 6px;
 }
 
 .contact__bottom .pre {
@@ -151,6 +140,7 @@
   display: flex;
   gap: em(160, 16);
   margin: 0 em(50, 16);
+  padding-top: em(25, 16);
 }
 
 .contact__anchor {

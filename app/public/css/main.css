@@ -608,6 +608,7 @@ a {
 
 .contact__container {
   max-width: 73.125em;
+  margin: 0 auto;
 }
 
 .contact__card {
@@ -657,7 +658,6 @@ a {
 .contact__bottom {
   position: relative;
   background: #FFFFFF;
-  padding-top: 1.5625em;
 }
 
 .contact__bottom:before {
@@ -666,22 +666,11 @@ a {
   position: absolute;
   height: 4.375em;
   background-color: #F2F2F2;
-  right: 0;
+  right: -1.25em;
   top: 0;
-  width: 50%;
-}
-
-.contact__bottom .container:before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 4.375em;
-  width: 54.375em;
-  left: 31.25em;
-  top: 0;
-  background-image: url(../images/gray-cutout.svg?f6ebbe440899d242a38398c4212f5b2a);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  width: 65%;
+  transform: skew(25deg);
+  border-bottom-left-radius: 6px;
 }
 
 .contact__bottom .pre {
@@ -694,6 +683,7 @@ a {
   display: flex;
   gap: 10em;
   margin: 0 3.125em;
+  padding-top: 1.5625em;
 }
 
 .contact__anchor {
@@ -713,7 +703,6 @@ a {
 
 .hero {
   position: relative;
-  z-index: 10;
   overflow: hidden;
 }
 
@@ -1041,36 +1030,41 @@ a {
 }
 
 .hero__invite {
+  max-width: 100vw;
+  display: grid;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
+  grid-template-columns: 60% 1fr;
 }
 
-.hero__invite:after {
-  content: "";
-  display: block;
-  clear: right;
+.hero__scroll-bg {
+  grid-column: 2/-1;
+  background: #FFFFFF;
+  position: relative;
+  padding: 2.2307692308em 3.8461538462em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.hero__invite:before {
+.hero__scroll-bg:before {
   content: "";
-  display: block;
   position: absolute;
   top: 0;
-  left: 100%;
-  bottom: 0;
-  width: 50vw;
-  background: #FFFFFF;
+  left: -25px;
+  height: 100%;
+  width: 60px;
+  transform: skew(-25deg);
+  background-color: #FFFFFF;
+  border-top-left-radius: 6px;
 }
 
 .hero__scroll {
   font-size: 0.8125em;
-  padding: 2.2307692308em 3.8461538462em;
-  background: #FFFFFF;
-  float: right;
-  display: block;
+  display: inline-block;
   position: relative;
   font-family: hk_groteskbold, Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -1082,25 +1076,10 @@ a {
   letter-spacing: 0.0769230769em;
 }
 
-.hero__scroll:before {
-  width: 4.8461538462em;
-  right: 99%;
-  background: url(../images/hero-scroll-border.svg?e78bdaffdf37d1d185025fa03294c68e) no-repeat 100%;
-}
-
-.hero__scroll:after, .hero__scroll:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-
-.hero__scroll:after {
-  width: 0.1538461538em;
-  height: 2.3076923077em;
+.hero__scroll--animation {
+  width: 0.125em;
+  height: 1.875em;
   background: url(../images/dot-line-vertical.svg?4813a7119a2c2656733b0efc8c410ad5) repeat-y 50%;
-  right: 0;
   margin: auto 0;
   -webkit-animation: scrollInvite 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
   animation: scrollInvite 3s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
@@ -1829,6 +1808,38 @@ a {
     height: 2px;
     background-image: url(../images/dot-line.svg?602fa6a6e19085df3460d167dc62b27b);
   }
+  .form__group.form__group--grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.875em;
+  }
+  .form__group {
+    padding: 0 3.125em;
+  }
+  .form__group--grid .form__textfield:last-child {
+    grid-column: 1/-1;
+  }
+  .form__textborder:before {
+    width: 100%;
+  }
+  .contact__menu {
+    margin: 0;
+    gap: 5.3125em;
+  }
+  .contact__bottom:before {
+    width: 50%;
+  }
+  .contact__anchor {
+    margin-right: 0;
+  }
+  .contact__anchor:not(:first-child) {
+    display: none;
+  }
+  .hero__intro {
+    width: 100%;
+  }
+  .hero__invite {
+    grid-template-columns: 30% 1fr;
+  }
 }
 /*1200px*/
 @media (max-width: 1200px) {
@@ -1870,6 +1881,7 @@ a {
     justify-content: center;
     transition: opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     opacity: 0;
+    visibility: hidden;
   }
   .nav {
     display: flex;
@@ -1921,6 +1933,7 @@ a {
   }
   .toggle:checked ~ .header__mobile {
     opacity: 1;
+    visibility: visible;
   }
   .header--expanded {
     overflow: hidden;

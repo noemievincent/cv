@@ -245,6 +245,48 @@ a {
         height: 2px;
         background-image: url(../../img/dot-line.svg);
     }
+
+    .form__group.form__group--grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: em(30, 16);
+    }
+
+    .form__group {
+        padding: 0 em(50, 16);
+    }
+
+    .form__group--grid .form__textfield:last-child {
+        grid-column: 1/-1;
+    }
+
+    .form__textborder:before {
+        width: 100%;
+    }
+
+    .contact__menu {
+        margin: 0;
+        gap: em(85, 16);
+    }
+
+    .contact__bottom:before {
+        width: 50%;
+    }
+
+    .contact__anchor {
+        margin-right: 0;
+    }
+
+    .contact__anchor:not(:first-child) {
+        display: none;
+    }
+
+    .hero__intro {
+        width: 100%;
+    }
+
+    .hero__invite {
+        grid-template-columns: 30% 1fr;
+    }
 }
 
 /*1200px*/
@@ -289,6 +331,7 @@ a {
         justify-content: center;
         transition: opacity .25s cubic-bezier(.25,.46,.45,.94);
         opacity: 0;
+        visibility: hidden;
     }
 
     .nav {
@@ -351,6 +394,7 @@ a {
 
     .toggle:checked ~ .header__mobile {
         opacity: 1;
+        visibility: visible;
     }
 
     .header--expanded {
