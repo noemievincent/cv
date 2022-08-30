@@ -11,11 +11,11 @@
 }
 
 .skills__list {
-  list-style: decimal;
+  list-style: decimal inside;
   display: flex;
   flex-direction: column;
   gap: em(28, 16);
-  margin-left: em(116, 16);
+  //margin-left: em(116, 16);
 }
 
 .skills__graph {

@@ -98,8 +98,11 @@ a {
     line-height: em(44, 24);
     margin-bottom: em(30, 24);
     color: #3F3F3F;
-    margin-left: em(100, 24);
     width: em(485, 24);
+}
+
+.content {
+    margin-left: em(100, 16);
 }
 
 .text {

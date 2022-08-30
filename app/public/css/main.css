@@ -185,8 +185,11 @@ a {
   line-height: 1.8333333333em;
   margin-bottom: 1.25em;
   color: #3F3F3F;
-  margin-left: 4.1666666667em;
   width: 20.2083333333em;
+}
+
+.content {
+  margin-left: 6.25em;
 }
 
 .text {
@@ -1255,6 +1258,7 @@ a {
   font-size: 2.0625em;
   color: #3F3F3F;
   line-height: 1.6666666667em;
+  margin-left: 3.0303030303em;
 }
 
 .about__details b {
@@ -1387,11 +1391,10 @@ a {
 }
 
 .skills__list {
-  list-style: decimal;
+  list-style: decimal inside;
   display: flex;
   flex-direction: column;
   gap: 1.75em;
-  margin-left: 7.25em;
 }
 
 .skills__graph {
@@ -1471,11 +1474,20 @@ a {
 .job__details, .job__text {
   width: 25em;
   line-height: 2.375em;
-  margin-left: 6.25em;
+}
+
+.projects__content {
+  padding: 6.25em 14.375em 1.25em;
+}
+
+.projects__fig:hover + .projects__content .projects__btn:before {
+  background-color: #DCF000;
+  text-decoration: none;
+  transform: none;
 }
 
 .projects__container {
-  padding: 6.25em;
+  padding: 0 6.25em 6.25em;
 }
 
 .projects__title {
@@ -1518,7 +1530,7 @@ a {
 .project__link:hover + .project__fig .project__img {
   transform: scale(1);
   transition: transform 4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .projects__item {
@@ -1536,9 +1548,8 @@ a {
 }
 
 .projects__fig {
-  max-height: 6.25em;
+  max-height: 100%;
   position: absolute;
-  z-index: -1;
 }
 
 .projects {
@@ -1554,13 +1565,13 @@ a {
   object-fit: cover;
 }
 
-.projects__content {
+.projects__contact {
   text-align: center;
   position: relative;
   margin-top: 3.125em;
 }
 
-.projects__content:before {
+.projects__contact:before {
   content: "";
   display: block;
   background-color: #F2F2F2;
@@ -1574,7 +1585,7 @@ a {
   margin: 3.125em 0;
 }
 
-.projects__contact {
+.projects__contact-btn {
   margin-top: 3.125em;
   box-shadow: 0 0 0 1.875em #FFFFFF;
   text-align: center;

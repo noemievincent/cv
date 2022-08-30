@@ -284,10 +284,11 @@
     <section class="skills" aria-labelledby="skills">
         <div class="skills__container container">
             <h2 role="heading" aria-level="2" class="skills__title pre" id="skills" data-number="02">Compétences</h2>
-            <p class="skills__details title">Mes expériences scolaires m’ont permis de développer ces différentes
-                compétences très utiles dans le milieu du Web.</p>
             <div class="skills__grid">
-                <div class="skills__left">
+                <div class="skills__content content">
+                    <p class="skills__details title">Mes expériences scolaires m’ont permis de développer ces
+                        différentes
+                        compétences très utiles dans le milieu du Web.</p>
                     <ol class="skills__list text">
                         <li class="skills__item">autonomie</li>
                         <li class="skills__item">créativité</li>
@@ -329,51 +330,57 @@
             <img src="img/jobideal.jpeg" alt="Un homme travaille devant un ordinateur" class="job__img">
             <div class="job__right">
                 <h2 role="heading" aria-level="2" class="job__title pre" id="job" data-number="03">Job idéal</h2>
-                <p class="job__details title">
-                    Mon travail idéal serait de m’occuper du développement front end d’un site Web.
-                </p>
-                <p class="job__text text">J’aimerais pouvoir travailler dans un lieu où il n’y pas de pression ou de
-                    compétition, chacun connait son rôle et n’essaie pas de se prouver meilleur que les autres ; je
-                    préfère également travailler seule ou un petit groupe avec des gens qui je connais déjà un
-                    minimum.</p>
+                <div class="job__content content">
+                    <p class="job__details title">
+                        Mon travail idéal serait de m’occuper du développement front end d’un site Web.
+                    </p>
+                    <p class="job__text text">J’aimerais pouvoir travailler dans un lieu où il n’y pas de pression ou de
+                        compétition, chacun connait son rôle et n’essaie pas de se prouver meilleur que les autres ; je
+                        préfère également travailler seule ou un petit groupe avec des gens qui je connais déjà un
+                        minimum.</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="projects" aria-labelledby="projects">
         <h2 role="heading" aria-level="2" class="projects__title hidden" id="projects">Mes projets</h2>
-        <figure class="projects__fig">
-            <img src="img/projects-bg.jpg" alt="" class="projects__img">
-        </figure>
+        <div class="projects__header">
+            <figure class="projects__fig">
+                <img src="img/projects-bg.jpg" alt="" class="projects__img">
+            </figure>
+            <div class="projects__content">
+                <h3 role="heading" aria-level="3" class="projects__title">Quelques-uns de mes projets</h3>
+                <a class="projects__btn btn btn--stroked" href="https://noemie-vincent.be/fr/projets/" target="_blank"><span
+                        class="btn__label">Afficher tous les projets</span>
+                </a>
+            </div>
+        </div>
         <div class="container projects__container">
-            <h3 role="heading" aria-level="3" class="projects__title">Quelques-uns de mes projets</h3>
-            <a class="projects__btn btn btn--stroked" href="https://noemie-vincent.be/fr/projets/" target="_blank"><span
-                    class="btn__label">Afficher tous les projets</span>
-            </a>
             <ul class="projects__list">
                 <li class="projects__item">
-                    <a href="https://noemie-vincent.be/fr/" class="project__link" target="_blank"></a>
+                    <a href="https://noemie-vincent.be/fr/" class="project__link full-link" target="_blank"></a>
                     <figure class="project__fig">
                         <img src="img/portfolio-thumbnail.jpg" alt="" class="project__img">
                     </figure>
                     <p class="project__name">Portfolio</p>
                 </li>
                 <li class="projects__item">
-                    <a href="https://antilope.noemie-vincent.be/fr/" class="project__link" target="_blank"></a>
+                    <a href="https://antilope.noemie-vincent.be/fr/" class="project__link full-link" target="_blank"></a>
                     <figure class="project__fig">
                         <img src="img/antilope-thumbnail.jpg" alt="" class="project__img">
                     </figure>
                     <p class="project__name">Antilope</p>
                 </li>
                 <li class="projects__item">
-                    <a href="https://cv.noemie-vincent.be/" class="project__link" target="_blank"></a>
+                    <a href="https://cv.noemie-vincent.be/" class="project__link full-link" target="_blank"></a>
                     <figure class="project__fig">
                         <img src="img/cv-thumbnail.jpg" alt="" class="project__img">
                     </figure>
                     <p class="project__name">CV</p>
                 </li>
             </ul>
-            <div class="projects__content">
-                <a href="#" class="showContact projects__contact btn btn--filled">
+            <div class="projects__contact">
+                <a href="#" class="showContact projects__contact-btn btn btn--filled">
                     <span class="btn__label">Contactez-moi</span></a>
             </div>
         </div>

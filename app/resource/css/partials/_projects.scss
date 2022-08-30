@@ -1,5 +1,15 @@
+.projects__content {
+  padding: em(100, 16) em(230, 16) em(20, 16);
+}
+
+.projects__fig:hover + .projects__content .projects__btn:before {
+  background-color: #DCF000;
+  text-decoration: none;
+  transform: none;
+}
+
 .projects__container {
-  padding: em(100, 16);
+  padding: 0 em(100, 16) em(100, 16);
 }
 
 .projects__title {
@@ -17,7 +27,7 @@
 }
 
 .project__link {
-  content: "";
+  content: '';
   display: block;
   z-index: 2;
   position: absolute;
@@ -35,13 +45,13 @@
   height: 100%;
   transform: scale(1.04);
   object-fit: cover;
-  transition: transform .3s cubic-bezier(.25,.46,.45,.94),opacity .6s cubic-bezier(.25,.46,.45,.94);
+  transition: transform .3s cubic-bezier(.25, .46, .45, .94), opacity .6s cubic-bezier(.25, .46, .45, .94);
 }
 
 .project__link:hover + .project__fig .project__img {
   transform: scale(1);
-  transition: transform 4s cubic-bezier(.25,.46,.45,.94),opacity .6s cubic-bezier(.25,.46,.45,.94);
-  opacity: .6;
+  transition: transform 4s cubic-bezier(.25, .46, .45, .94), opacity .6s cubic-bezier(.25, .46, .45, .94);
+  opacity: .4;
 }
 
 .projects__item {
@@ -59,9 +69,8 @@
 }
 
 .projects__fig {
-  max-height: em(100, 16);
+  max-height: 100%;
   position: absolute;
-  z-index: -1;
 }
 
 .projects {
@@ -77,14 +86,14 @@
   object-fit: cover;
 }
 
-.projects__content {
+.projects__contact {
   text-align: center;
   position: relative;
   margin-top: em(50, 16);
 }
 
-.projects__content:before {
-  content: "";
+.projects__contact:before {
+  content: '';
   display: block;
   background-color: #F2F2F2;
   width: 100%;
@@ -97,7 +106,7 @@
   margin: em(50, 16) 0;
 }
 
-.projects__contact {
+.projects__contact-btn {
   margin-top: em(50, 16);
   box-shadow: 0 0 0 em(30, 16) #FFFFFF;
   text-align: center;
