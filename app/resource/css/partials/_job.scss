@@ -4,11 +4,9 @@
 
 .job__container {
   display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 .job__details, .job__text {
-  width: em(400, 16);
   line-height: em(38, 16);
-  //margin-left: em(100, 16);
 }

@@ -1,5 +1,6 @@
 .projects__content {
-  padding: em(100, 16) em(230, 16) em(20, 16);
+  padding: em(100, 16) em(100, 16) em(20, 16);
+  margin-left: em(135, 16);
 }
 
 .projects__fig:hover + .projects__content .projects__btn:before {
