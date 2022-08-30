@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   overflow: hidden;
+  z-index: 9;
 }
 
 .hero__container {

@@ -31,7 +31,8 @@
 }
 
 .contact__close {
-  height: 100%;
+  height: 20px;
+  width: 14px;
   transition: transform .3s cubic-bezier(.25, .46, .45, .94), color .3s cubic-bezier(.25, .46, .45, .94);
 }
 
@@ -156,4 +157,9 @@
 .contact__anchor--active, .contact__anchor:focus, .contact__anchor:hover {
   border-bottom-color: #DCF000;
   color: #3F3F3F;
+}
+
+.close__svg {
+  width: 100%;
+  height: 100%;
 }
