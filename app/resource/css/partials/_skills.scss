@@ -4,18 +4,34 @@
   padding-top: em(100, 16);
 }
 
-.skills__grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
 .skills__list {
   list-style: decimal inside;
   display: flex;
   flex-direction: column;
   gap: em(28, 16);
-  //margin-left: em(116, 16);
+}
+
+.skills__item {
+  transition: color ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.skills__item:hover {
+  color: #383838;
+}
+
+.skills__item::marker {
+  transition: font-size ease-in-out 0.2s;
+}
+
+.skills__item:hover::marker {
+  font-size: em(22, 16);
+}
+
+.skills__flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .skills__graph {
