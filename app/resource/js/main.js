@@ -3,6 +3,7 @@ document.body.classList.add('js-enabled');
 
 handleContactForm();
 handleBurgerMenu();
+handleSkillsGraph();
 
 function handleContactForm() {
     const contactBtns = document.querySelectorAll('.showContact');
@@ -46,6 +47,29 @@ function handleBurgerMenu() {
     menuItems.forEach((menuItem) => {
         menuItem.addEventListener('click', (e) => {
             openMenuCheckbox.checked = false;
+        })
+    })
+}
+
+function handleSkillsGraph() {
+    const skillsItems = document.querySelectorAll('.skills__item');
+    const skillsBars = document.querySelectorAll('.skills__bar');
+    const skillsBarsGray = document.querySelectorAll('.skills__bar--gray');
+
+    skillsItems.forEach((item, index) => {
+        item.addEventListener('click', (e) => {
+            skillsBars[index].classList.add('animated');
+            skillsBarsGray[index].addEventListener('animationend', (e) => {
+                skillsBars[index].classList.remove('animated');
+            })
+        })
+
+        item.addEventListener('mouseenter', (e) => {
+            skillsBars[index].classList.add('hovered');
+        })
+
+        item.addEventListener('mouseleave', (e) => {
+            skillsBars[index].classList.remove('hovered');
         })
     })
 }

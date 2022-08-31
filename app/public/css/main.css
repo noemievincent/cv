@@ -1476,33 +1476,45 @@ a {
   color: #DCF000;
   margin-bottom: 0.375em;
   z-index: 1;
+  transition: color ease-in-out 0.2s;
 }
 
-.skills__bar--gray:before {
-  content: "";
+.skills__bar--gray {
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: #383838;
   width: 100%;
   height: 100%;
+  transition: background-color ease-in-out 0.2s;
+}
+
+.animated .skills__bar--gray {
   -webkit-animation: growBar 2s;
           animation: growBar 2s;
 }
 
-.div1:before, .div4:before {
+.hovered.skills__bar:before {
+  color: #383838;
+}
+
+.hovered .skills__bar--gray {
+  background-color: #DCF000;
+}
+
+.div1, .div4 {
   height: 66%;
 }
 
-.div2:before {
+.div2 {
   height: 88%;
 }
 
-.div5:before {
+.div5 {
   height: 77%;
 }
 
-.div7:before {
+.div7 {
   height: 57%;
 }
 
