@@ -136,15 +136,15 @@
   border-radius: em(40, 16);
 }
 
+.form__img svg {
+  height: em(10, 16);
+  fill: #3F3F3F;
+}
+
 .form__control--disabled, .form__control--disabled .form__controltext, .form__control--disabled svg {
   pointer-events: none;
   color: #C8C8C8;
   fill: #C8C8C8;
-}
-
-.form__img svg {
-  height: em(10, 16);
-  fill: #3F3F3F;
 }
 
 .form__controltext {

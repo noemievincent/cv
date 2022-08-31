@@ -10,6 +10,8 @@ function handleContactForm() {
     const moreInfosBtn = document.querySelector('.contact__expander-link');
     const moreInfosContainer = document.querySelector('.contact__container');
     const moreInfosText = document.querySelector('.contact__expander-text');
+    const anchors = document.querySelectorAll('.contact__anchor');
+    const contactProgress = document.querySelector('.contact__progress');
 
     moreInfosBtn.addEventListener('click', (e) => {
         moreInfosContainer.classList.toggle('contact__expander--expanded');
@@ -25,6 +27,12 @@ function handleContactForm() {
     closeBtn.addEventListener('click', (e) => {
         document.body.classList.remove('contact--show');
     });
+
+    anchors.forEach((anchor) => {
+        if (anchor.classList.contains('contact__anchor--active')) {
+            contactProgress.style.transform = `scaleX(${0.5 * anchor.dataset.number})` ;
+        }
+    })
 }
 
 function handleBurgerMenu() {

@@ -34,9 +34,12 @@
 }
 
 .hero__sub {
-  margin: em(35, 16) 0 em(80, 16);
   position: relative;
   text-transform: capitalize;
+}
+
+.hero__contact {
+  margin-top: em(60, 16);
 }
 
 .hero__baseline {
@@ -110,7 +113,7 @@
   top: em(220, 16);
   left: 0;
   right: 0;
-  bottom: 0;
+  //bottom: 0;
   transition: opacity .3s cubic-bezier(.25,.46,.45,.94),visibility 0s linear .3s;
 }
 
