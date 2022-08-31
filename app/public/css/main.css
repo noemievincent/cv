@@ -380,6 +380,11 @@ a {
   grid-row-gap: 3.75em;
 }
 
+.form__group {
+  opacity: 1;
+  transition: opacity ease-in-out 0.4s;
+}
+
 .form__group--hidden {
   position: absolute;
   overflow: hidden;
@@ -389,6 +394,7 @@ a {
   margin: -0.0625em;
   padding: 0;
   border: 0;
+  opacity: 0;
 }
 
 .form__textfield {
@@ -732,6 +738,16 @@ a {
 .contact__menu > * {
   padding-top: 1.5625em;
   padding-left: 6.25em;
+}
+
+.contact__sub {
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+
+.contact__sub--hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .contact__anchor {
@@ -1376,7 +1392,7 @@ a {
   border-color: #3F3F3F;
 }
 
-.exp__control:focus, .exp__control:hover {
+.exp__control:hover {
   transform: translateY(0.0625em);
   border-bottom-width: 0.1875em;
 }
@@ -1392,6 +1408,10 @@ a {
 .exp__item--show {
   opacity: 1;
   pointer-events: all;
+}
+
+.exp__item--show, .exp__item--show .exp__date, .exp__item--show .exp__text {
+  transition-delay: 0.4s;
 }
 
 .exp__item--next {

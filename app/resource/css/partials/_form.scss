@@ -13,6 +13,11 @@
   grid-row-gap: em(60, 16);
 }
 
+.form__group {
+  opacity: 1;
+  transition: opacity ease-in-out 0.4s;
+}
+
 .form__group--hidden {
   position: absolute;
   overflow: hidden;
@@ -22,6 +27,7 @@
   margin: em(-1, 16);
   padding: 0;
   border: 0;
+  opacity: 0;
 }
 
 .form__textfield {

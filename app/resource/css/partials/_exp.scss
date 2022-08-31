@@ -37,7 +37,7 @@
   border-color: #3F3F3F
 }
 
-.exp__control:focus, .exp__control:hover {
+.exp__control:hover {
   transform: translateY(em(1, 16));
   border-bottom-width: em(3, 16);
 }
@@ -53,6 +53,10 @@
 .exp__item--show {
   opacity: 1;
   pointer-events: all;
+}
+
+.exp__item--show, .exp__item--show .exp__date, .exp__item--show .exp__text {
+  transition-delay: 0.4s;
 }
 
 .exp__item--next {
@@ -75,3 +79,29 @@
   color: #7C7A7A;
   width: em(530, 25);
 }
+//
+//.animated.exp__item--show .exp__text {
+//  animation: goDown 1s;
+//}
+//
+//.animated.exp__item--next .exp__text {
+//  animation: goUp 5s;
+//}
+//
+//@keyframes goDown {
+//  to {
+//    opacity: 0;
+//    transform: translateY(30px);
+//  }
+//}
+//
+//@keyframes goUp {
+//  from {
+//    opacity: 0;
+//    transform: translateY(30px);
+//  }
+//  to {
+//    opacity: 1;
+//    transform: translateY(0);
+//  }
+//}

@@ -265,10 +265,10 @@
         <h3 class="exp__title hidden">Mon parcours</h3>
         <div class="exp__slider container">
             <div class="exp__controls">
-                <a href="#" title="Afficher les études supérieurs" data-target="0"
+                <a href="" title="Afficher les études supérieurs" data-target="0"
                    class="exp__control exp__control--active"><span
                         class="hidden">Afficher les études supérieurs</span></a>
-                <a href="#" title="Afficher les études secondaires" data-target="1"
+                <a href="" title="Afficher les études secondaires" data-target="1"
                    class="exp__control"><span class="hidden">Afficher les études secondaires</span></a>
             </div>
             <div class="exp__items">
@@ -488,7 +488,10 @@
         </div>
         <div class="contact__bottom">
             <div class="contact__menu">
-                <p class="pre" data-number="01">Informations personnelles</p>
+                <div class="contact__subs">
+                    <p class="pre contact__sub contact__sub--current" data-number="01"><span>Informations personnelles</span></p>
+                    <p class="pre contact__sub contact__sub--hidden" data-number="02"><span>Message</span></p>
+                </div>
                 <div class="contact__nav contact__nav--hidden">
                     <a href="#who" class="contact__anchor contact__anchor--active" data-number="01">Informations
                         personnelles</a>
@@ -542,7 +545,8 @@
                         </div>
                     </div>
                     <div class="form__navigator">
-                        <a href="#" class="form__control form__control--left form__control--disabled">
+                        <a href="#"
+                           class="form__control form__control--prev form__control--disabled">
                             <span class="form__img">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -555,7 +559,7 @@
                             <span class="form__controltext">Précédent</span>
                         </a>
                         <button type="submit"
-                                class="form__control form__control--right form__control--submit form__control--hidden">
+                                class="form__control form__control--submit form__control--hidden">
                             <span class="form__controltext">Soumettre</span>
                             <span class="form__img">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -567,7 +571,7 @@
                             </span>
                         </button>
                         <a href="#"
-                           class="form__control form__control--right">
+                           class="form__control form__control--next">
                             <span class="form__controltext">Suivant</span>
                             <span class="form__img">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"

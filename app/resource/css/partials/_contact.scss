@@ -184,6 +184,16 @@
   padding-left: em(100, 16);
 }
 
+.contact__sub {
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+
+.contact__sub--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .contact__anchor {
   color: #7C7A7A;
   padding: 0 0 em(27, 16);
