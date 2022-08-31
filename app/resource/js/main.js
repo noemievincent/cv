@@ -7,7 +7,6 @@ handleBurgerMenu();
 function handleContactForm() {
     const contactBtns = document.querySelectorAll('.showContact');
     const closeBtn = document.querySelector('.contact__close');
-    const openMenuCheckbox = document.querySelector(".toggle");
     const moreInfosBtn = document.querySelector('.contact__expander-link');
     const moreInfosContainer = document.querySelector('.contact__container');
     const moreInfosText = document.querySelector('.contact__expander-text');
@@ -20,9 +19,6 @@ function handleContactForm() {
     contactBtns.forEach((btn) => {
         btn.addEventListener('click', (e) => {
             document.body.classList.add('contact--show');
-            if (openMenuCheckbox.checked) {
-                openMenuCheckbox.checked = false;
-            }
         });
     });
 
@@ -34,6 +30,10 @@ function handleContactForm() {
 function handleBurgerMenu() {
     const openMenuCheckbox = document.querySelector(".toggle");
     const menuItems = document.querySelectorAll(".nav__link");
+
+    openMenuCheckbox.addEventListener('change', (e) => {
+        document.body.classList.toggle('header--expanded');
+    })
 
     menuItems.forEach((menuItem) => {
         menuItem.addEventListener('click', (e) => {

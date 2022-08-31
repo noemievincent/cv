@@ -4,6 +4,13 @@
   padding-top: em(100, 16);
 }
 
+.skills__flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: em(120, 16);
+}
+
 .skills__list {
   list-style: decimal inside;
   display: flex;
@@ -26,13 +33,6 @@
 
 .skills__item:hover::marker {
   font-size: em(18, 16);
-}
-
-.skills__flex {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-right: em(120, 16);
 }
 
 .skills__graph {

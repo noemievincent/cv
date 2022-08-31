@@ -16,10 +16,12 @@
   z-index: 1;
   vertical-align: middle;
   height: 100%;
-  //width: 100%;
-  //margin-left: 5.9829059829%;
-  //margin-top: em(200, 16);
-  //display: inline-block;
+}
+
+.hero__intro {
+  position: relative;
+  z-index: 1;
+  padding-top: em(160, 16);
 }
 
 .hero__title {
@@ -37,6 +39,15 @@
   text-transform: capitalize;
 }
 
+.hero__baseline {
+  font-family: hk_groteskregular, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: em(40, 16);
+  line-height: em(73, 40);
+  color: #C0C0C0;
+}
+
 .hero__objectives {
   position: absolute;
   overflow: hidden;
@@ -48,21 +59,21 @@
   border: 0;
 }
 
-.hero__baseline {
-  font-family: hk_groteskregular, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: em(40, 16);
-  line-height: em(73, 40);
-  color: #C0C0C0;
-}
-
 .hero__steps {
   display: inline-block;
   vertical-align: top;
   height: em(42, 16);
   position: relative;
   transition: width .2s cubic-bezier(.25, .46, .45, .94) .18s, height .2s cubic-bezier(.25, .46, .45, .94) .18s
+}
+
+.hero__steps:after {
+  content: '';
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: em(2, 16);
+  background: #DCF000
 }
 
 .hero__step {
@@ -88,170 +99,25 @@
   transition: opacity .2s cubic-bezier(.25, .46, .45, .94) .28s, visibility 0s linear .28s
 }
 
-.hero__background {
-  z-index: -1;
-}
-
-.hero__background, .hero__mood {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.hero__mood {
-  display: block;
-  background-color: #000000;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1;
-  transition: opacity .6s cubic-bezier(.25, .46, .45, .94), visibility 0s linear .6s
-}
-
-.hero__mood--active {
+.hero__step--active {
   opacity: 1;
   visibility: visible;
-  z-index: 2;
-  transition: opacity .6s cubic-bezier(.25, .46, .45, .94)
+  transition: opacity .2s cubic-bezier(.25, .46, .45, .94) .28s, visibility 0s linear .28s
 }
 
-.hero__img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  opacity: .3;
-  transform: scale(1.04);
-  transition: transform 0s linear .6s;
-}
-
-.hero--shown .hero__mood--active .hero__img {
-  transform: scale(1);
-  transition: transform 4s cubic-bezier(.25, .46, .45, .94)
-}
-
-.hero__label {
+.hero__animation {
   position: absolute;
-  display: block;
-  bottom: 100%;
-  left: 50%;
-  font-family: hk_groteskmedium, Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: em(13, 16);
-  text-transform: uppercase;
-  letter-spacing: em(.6, 13);
-  color: #FFFFFF;
-  visibility: hidden;
-  opacity: 0
-}
-
-.hero__intro {
-  position: relative;
-  z-index: 1;
-  padding-top: em(160, 16);
-}
-
-.hero__interactive {
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%
-}
-
-.hero__interactive, .hero__point {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0
-}
-
-.hero__point {
-  font: inherit;
-  padding: 0;
-  border: none;
-  width: em(50, 16);
-  height: em(50, 16);
-  border-radius: 0;
-  overflow: hidden;
-  margin: em(-25, 16) 0 0 em(-25, 16);
-  cursor: pointer;
-  z-index: 2;
-  background: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7') 0 0 repeat;
-}
-
-.hero__point--visible {
-  overflow: visible;
-}
-
-.hero__point--visible:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  top: em(220, 16);
   left: 0;
-  border-radius: 50%;
-  width: em(12, 16);
-  height: em(12, 16);
-  margin: auto;
-  background: #7C7A7A;
-}
-
-.hero__point--visible.hero__point--last:before, .hero__point--visible:before {
-  transition: opacity .2s cubic-bezier(.25, .46, .45, .94), background .2s cubic-bezier(.25, .46, .45, .94)
-}
-
-.hero__point--visible.hero__point--last:before {
-  opacity: 0
-}
-
-.hero--shown .hero__point--visible.hero__point--last:before {
-  opacity: 1;
-  transition: opacity .2s cubic-bezier(.25, .46, .45, .94) 2s, background .2s cubic-bezier(.25, .46, .45, .94)
-}
-
-.hero__point--visible.hero__point--active:before, .hero__point--visible.hero__point--previous:before {
-  opacity: 1;
-  background: #DCF000;
-  transition: opacity .2s cubic-bezier(.25, .46, .45, .94), background .2s cubic-bezier(.25, .46, .45, .94)
-}
-
-.hero__point--visible .hero__label {
-  transform: translate3d(-50%, em(10, 13), 0);
-  transition: opacity .3s cubic-bezier(.25, .46, .45, .94), transform .3s cubic-bezier(.25, .46, .45, .94), visibility 0s linear .3s
-}
-
-.hero--shown .hero__point--visible .hero__label {
-  visibility: visible;
-  opacity: 1;
-  transform: translate3d(-50%, 0, 0);
-  transition: opacity .3s cubic-bezier(.25, .46, .45, .94) 2.1s, transform .3s cubic-bezier(.25, .46, .45, .94) 2.1s
+  right: 0;
+  bottom: 0;
+  transition: opacity .3s cubic-bezier(.25,.46,.45,.94),visibility 0s linear .3s;
 }
 
 .hero--shown .hero__animation {
   visibility: visible;
   opacity: 1;
   transition: opacity .3s cubic-bezier(.25, .46, .45, .94)
-}
-
-.hero__animation {
-  //width: 100%;
-  //height: 100%;
-  position: absolute;
-  top: em(220, 16);
-  //left: 5.9829059829%;
-  //right: 5.9829059829%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: opacity .3s cubic-bezier(.25,.46,.45,.94),visibility 0s linear .3s;
 }
 
 .hero__paths {
@@ -315,19 +181,145 @@
   display: block
 }
 
-.hero__steps:after {
-  content: '';
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: em(2, 16);
-  background: #DCF000
+.hero__interactive {
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%
+ }
+
+.hero__interactive, .hero__point {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0
 }
 
-.hero__step--active {
+.hero__point {
+  font: inherit;
+  padding: 0;
+  border: none;
+  width: em(50, 16);
+  height: em(50, 16);
+  border-radius: 0;
+  overflow: hidden;
+  margin: em(-25, 16) 0 0 em(-25, 16);
+  cursor: pointer;
+  z-index: 2;
+  background: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7') 0 0 repeat;
+}
+
+.hero__point--visible {
+  overflow: visible;
+}
+
+.hero__point--visible:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  width: em(12, 16);
+  height: em(12, 16);
+  margin: auto;
+  background: #7C7A7A;
+}
+
+.hero__point--visible.hero__point--last:before {
+  opacity: 0
+}
+
+.hero__point--visible.hero__point--last:before, .hero__point--visible:before {
+  transition: opacity .2s cubic-bezier(.25, .46, .45, .94), background .2s cubic-bezier(.25, .46, .45, .94)
+}
+
+.hero--shown .hero__point--visible.hero__point--last:before {
+  opacity: 1;
+  transition: opacity .2s cubic-bezier(.25, .46, .45, .94) 2s, background .2s cubic-bezier(.25, .46, .45, .94)
+}
+
+.hero__point--visible.hero__point--active:before, .hero__point--visible.hero__point--previous:before {
+  opacity: 1;
+  background: #DCF000;
+  transition: opacity .2s cubic-bezier(.25, .46, .45, .94), background .2s cubic-bezier(.25, .46, .45, .94)
+}
+
+.hero__label {
+  position: absolute;
+  display: block;
+  bottom: 100%;
+  left: 50%;
+  font-family: hk_groteskmedium, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: em(13, 16);
+  text-transform: uppercase;
+  letter-spacing: em(.6, 13);
+  color: #FFFFFF;
+  visibility: hidden;
+  opacity: 0
+}
+
+.hero__point--visible .hero__label {
+  transform: translate3d(-50%, em(10, 13), 0);
+  transition: opacity .3s cubic-bezier(.25, .46, .45, .94), transform .3s cubic-bezier(.25, .46, .45, .94), visibility 0s linear .3s
+}
+
+.hero--shown .hero__point--visible .hero__label {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(-50%, 0, 0);
+  transition: opacity .3s cubic-bezier(.25, .46, .45, .94) 2.1s, transform .3s cubic-bezier(.25, .46, .45, .94) 2.1s
+}
+
+.hero__background {
+  z-index: -1;
+}
+
+.hero__background, .hero__mood {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero__mood {
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity .6s cubic-bezier(.25, .46, .45, .94), visibility 0s linear .6s
+}
+
+.hero__mood--active {
   opacity: 1;
   visibility: visible;
-  transition: opacity .2s cubic-bezier(.25, .46, .45, .94) .28s, visibility 0s linear .28s
+  z-index: 2;
+  transition: opacity .6s cubic-bezier(.25, .46, .45, .94)
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: .3;
+  transform: scale(1.04);
+  transition: transform 0s linear .6s;
+}
+
+.hero--shown .hero__mood--active .hero__img {
+  transform: scale(1);
+  transition: transform 4s cubic-bezier(.25, .46, .45, .94)
 }
 
 .hero__invite {

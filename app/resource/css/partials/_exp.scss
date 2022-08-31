@@ -44,7 +44,6 @@
 
 .exp__item {
   display: flex;
-  //justify-content: space-around;
   justify-content: space-between;
   opacity: 0;
   pointer-events: none;
@@ -60,6 +59,14 @@
   display: none;
 }
 
+.exp__date {
+  font-family: hk_grotesksemibold, Helvetica, Arial, sans-serif;
+  font-size: em(68, 16);
+  width: em(150, 68);
+  text-align: center;
+  line-height: em(100, 68);
+}
+
 .exp__text {
   font-family: hk_grotesklight, Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -67,12 +74,4 @@
   line-height: em(40, 25);
   color: #7C7A7A;
   width: em(530, 25);
-}
-
-.exp__date {
-  font-family: hk_grotesksemibold, Helvetica, Arial, sans-serif;
-  font-size: em(68, 16);
-  width: em(150, 68);
-  text-align: center;
-  line-height: em(100, 68);
 }

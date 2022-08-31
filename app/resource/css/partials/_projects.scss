@@ -1,5 +1,36 @@
+.projects {
+  position: relative;
+}
+
+.projects__title {
+  font-family: hk_grotesksemibold, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: em(40, 16);
+  line-height: em(65, 40);
+  color: #3F3F3F;
+  max-width: em(430, 40);
+}
+
+.projects__fig {
+  max-height: 100%;
+  position: absolute;
+}
+
+.projects__img {
+  display: block;
+  width: 100vw;
+  height: em(500, 16);
+  opacity: .3;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .projects__content {
   padding-top: em(100, 16);
+}
+
+.projects__btn {
+  margin: em(50, 16) 0;
 }
 
 .projects__fig:hover + .projects__content .projects__btn:before {
@@ -12,18 +43,16 @@
   padding-bottom: em(100, 16);
 }
 
-.projects__title {
-  font-family: hk_grotesksemibold, Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  font-size: em(40, 16);
-  line-height: em(65, 40);
-  color: #3F3F3F;
-  max-width: em(430, 40);
-}
-
 .projects__list {
   display: flex;
   gap: em(35, 16);
+}
+
+.projects__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .project__fig {
@@ -45,36 +74,11 @@
   opacity: .4;
 }
 
-.projects__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-}
-
 .project__name {
   font-family: hk_groteskmedium, Helvetica, Arial, sans-serif;
   font-size: em(35, 16);
   text-align: center;
   margin-top: em(50, 35);
-}
-
-.projects__fig {
-  max-height: 100%;
-  position: absolute;
-}
-
-.projects {
-  position: relative;
-}
-
-.projects__img {
-  display: block;
-  width: 100vw;
-  height: em(500, 16);
-  opacity: .3;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 .projects__contact {
@@ -92,10 +96,6 @@
   height: em(1, 16);
   position: absolute;
   top: 75%;
-}
-
-.projects__btn {
-  margin: em(50, 16) 0;
 }
 
 .projects__contact-btn {

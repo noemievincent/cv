@@ -1,14 +1,10 @@
-.job__img {
-  height: em(700, 16);
-}
-
 .job__container {
   display: flex;
   width: 100%;
 }
 
-.job__text {
-  line-height: em(30, 16);
+.job__img {
+  height: em(700, 16);
 }
 
 .job__right {
@@ -18,4 +14,8 @@
 .job__content {
   max-width: em(400, 16);
 
+}
+
+.job__text {
+  line-height: em(30, 16);
 }

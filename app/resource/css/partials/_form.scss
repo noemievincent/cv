@@ -11,10 +11,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: em(60, 16);
-  //display: flex;
-  //flex-wrap: wrap;
-  //justify-content: space-between;
-  //gap: em(60, 16) em(20, 16);
 }
 
 .form__group--hidden {
@@ -28,6 +24,10 @@
   border: 0;
 }
 
+.form__textfield {
+  position: relative;
+}
+
 .form__label {
   font-size: em(27, 16);
   line-height: em(43, 27);
@@ -37,8 +37,8 @@
   transition: color .2s cubic-bezier(.25, .46, .45, .94), border-bottom-color .2s cubic-bezier(.25, .46, .45, .94);
 }
 
-.form__textfield {
-  position: relative;
+.form__label:hover {
+  border-color: #DCF000;
 }
 
 .form__textarea, .form__textinput {
@@ -60,6 +60,15 @@
   resize: none;
   height: em(196, 18);
   margin-top: em(30, 18);
+}
+
+.required:after {
+  content: "*";
+  margin-left: em(5, 27);
+}
+
+::placeholder {
+  color: #C8C8C8;
 }
 
 .form__textborder {
@@ -102,10 +111,6 @@
   border-color: #DCF000;
 }
 
-.form__label:hover {
-  border-color: #DCF000;
-}
-
 .form__navigator {
   margin-top: em(60, 16);
   display: flex;
@@ -114,6 +119,10 @@
 
 .form__control {
   padding: em(16, 16) em(21, 16) em(19, 16);
+}
+
+.form__control--hidden {
+  display: none;
 }
 
 .form__control:hover, .form__control:focus {
@@ -125,6 +134,17 @@
   border: none;
   background-color: #DCF000;
   border-radius: em(40, 16);
+}
+
+.form__control--disabled, .form__control--disabled .form__controltext, .form__control--disabled svg {
+  pointer-events: none;
+  color: #C8C8C8;
+  fill: #C8C8C8;
+}
+
+.form__img svg {
+  height: em(10, 16);
+  fill: #3F3F3F;
 }
 
 .form__controltext {
@@ -153,28 +173,4 @@
 
 .form__control--left:hover .form__controltext, .form__control--left:focus .form__controltext {
   margin-left: em(20, 16);
-}
-
-.form__img svg {
-  height: em(10, 16);
-  fill: #3F3F3F;
-}
-
-.form__control--hidden {
-  display: none;
-}
-
-.form__control--disabled, .form__control--disabled .form__controltext, .form__control--disabled svg {
-  pointer-events: none;
-  color: #C8C8C8;
-  fill: #C8C8C8;
-}
-
-.required:after {
-  content: "*";
-  margin-left: em(5, 27);
-}
-
-::placeholder {
-  color: #C8C8C8;
 }
