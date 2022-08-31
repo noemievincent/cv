@@ -155,65 +155,6 @@ a {
 @import 'partials/footer';
 
 /* MEDIA QUERIES */
-//body:before {
-//  content: "default size";
-//  background-color: #D7B6FF;
-//  width: 100%;
-//  height: 15px;
-//  font-size: 11px;
-//  z-index: 20;
-//  position: fixed;
-//  top: 0;
-//  left: 0;
-//  right: 0;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//}
-//
-//@media (min-width: 1480px) {
-//  body:before {
-//    content: "min-width: 1480px";
-//    background-color: lightgreen;
-//  }
-//}
-//
-//@media (max-width: 1199px) {
-//  body:before {
-//    content: "max-width: 1199px";
-//    background-color: lightblue;
-//  }
-//}
-//
-//@media (max-width: 945px) {
-//  body:before {
-//    content: "max-width: 945px";
-//    background-color: lightseagreen;
-//  }
-//}
-//
-//@media (max-width: 759px) {
-//  body:before {
-//    content: "max-width: 759px";
-//    background-color: lightsalmon;
-//  }
-//}
-//
-//@media (max-width: 639px) {
-//  body:before {
-//    content: "max-width: 639px";
-//    background-color: lightcoral;
-//  }
-//}
-//
-//@media (max-width: 479px) {
-//  body:before {
-//    content: "max-width: 479px";
-//    background-color: lightpink;
-//  }
-//}
-
-
 /*1480px*/
 @media (min-width: 1480px) {
   .centered {
