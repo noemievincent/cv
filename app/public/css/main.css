@@ -183,8 +183,8 @@ a {
 }
 
 .centered {
-  padding-left: 11.5625em;
-  padding-right: 11.5625em;
+  padding-left: 8.75em;
+  padding-right: 8.75em;
 }
 
 .title {
@@ -393,6 +393,10 @@ a {
 
 .form__textfield {
   position: relative;
+}
+
+.form__textfield:last-child {
+  grid-column: 2/-1;
 }
 
 .form__label {
@@ -1533,10 +1537,6 @@ a {
   padding: 3.125em 6.25em;
 }
 
-.job__content {
-  max-width: 25em;
-}
-
 .job__text {
   line-height: 1.875em;
 }
@@ -1885,6 +1885,36 @@ a {
     left: 20px;
     border: none;
   }
+  .about__content {
+    flex-direction: column;
+  }
+  .exp__slider {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 2.5em;
+  }
+  .exp__item {
+    flex-direction: column;
+    gap: 1.25em;
+  }
+  .exp__controls {
+    position: unset;
+  }
+  .exp__date {
+    text-align: start;
+    width: 100%;
+  }
+  .exp__text {
+    width: 100%;
+  }
+  .job__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.875em;
+  }
+  .job__text {
+    line-height: 1.625em;
+  }
   .footer__btn {
     display: none;
     opacity: 0;
@@ -1905,31 +1935,11 @@ a {
   .hero__invite {
     grid-template-columns: 30% 1fr;
   }
-  .about__content {
-    flex-direction: column;
-  }
   .about__details {
     max-width: 18.1818181818em;
   }
   .about__logos {
     align-self: center;
-  }
-  .exp__item {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25em;
-  }
-  .exp__controls {
-    position: unset;
-  }
-  .exp__slider {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-bottom: 2.5em;
-  }
-  .exp__date {
-    width: 100%;
   }
   .skills__flex {
     flex-direction: column;
@@ -1937,14 +1947,6 @@ a {
   }
   .skills__graph {
     align-self: center;
-  }
-  .job__container {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 1.875em;
-  }
-  .job__text {
-    line-height: 1.625em;
   }
   .projects__content {
     margin-left: 0;
@@ -2025,15 +2027,6 @@ a {
   .content {
     margin-left: 0;
   }
-  .exp__slider {
-    align-items: start;
-  }
-  .exp__date {
-    text-align: start;
-  }
-  .exp__text {
-    width: 100%;
-  }
   .skills__flex {
     padding-right: 0;
   }
@@ -2082,7 +2075,7 @@ a {
     width: 0.5625em;
     height: 0.5625em;
     border-radius: 50%;
-    background: #dcf000;
+    background: #DCF000;
     position: absolute;
     z-index: 2;
     left: auto;
@@ -2100,7 +2093,7 @@ a {
     right: 0;
     left: 0;
     height: 0.1875em;
-    background-color: #dcf000;
+    background-color: #DCF000;
     transform-origin: left;
     transform: scaleX(0);
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
