@@ -44,10 +44,11 @@
 
 .exp__item {
   display: flex;
-  justify-content: space-around;
+  //justify-content: space-around;
+  justify-content: space-between;
   opacity: 0;
   pointer-events: none;
-  padding: em(30, 16) em(80, 16);
+  padding: em(30, 16) 0;
 }
 
 .exp__item--show {

@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   gap: em(60, 16);
-  padding: 0 em(10, 16);
 }
 
 .about__details {
@@ -16,7 +15,7 @@
   font-size: em(33, 16);
   color: #3F3F3F;
   line-height: em(55, 33);
-  margin-left: em(100, 33);
+  //margin-left: em(100, 33);
   max-width: em(600, 33);
 }
 

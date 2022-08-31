@@ -1,5 +1,5 @@
 .form {
-  padding: em(100, 16) em(40, 16);
+  padding: em(100, 16) 0 em(60, 16);
   position: relative;
   z-index: 10;
   background: #FFFFFF;
@@ -107,7 +107,7 @@
 }
 
 .form__navigator {
-  margin-top: em(40, 16);
+  margin-top: em(60, 16);
   display: flex;
   justify-content: space-between;
 }

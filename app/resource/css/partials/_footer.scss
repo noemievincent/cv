@@ -1,6 +1,7 @@
 .footer__top {
   background-color: #313030;
-  padding: em(70, 16) 0;
+  padding-top: em(70, 16);
+  padding-bottom: em(70, 16);
 }
 
 .footer__container {
@@ -64,7 +65,8 @@
 }
 
 .footer__bottom {
-  padding: em(20, 16) 0;
+  padding-top: em(20, 16);
+  padding-bottom: em(20, 16);
   background-color: #262626;
 }
 

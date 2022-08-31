@@ -8,7 +8,7 @@ $browser-context: 16; // Default
 }
 
 .hero__animation {
-    display: none;
+    //display: none;
 }
 
 html * {
@@ -62,7 +62,7 @@ a {
     font-size: em(13, 16);
     letter-spacing: em(1, 13);
     margin-bottom: em(13, 13);
-    margin-left: em(60, 13);
+    //margin-left: em(60, 13);
     display: flex;
     align-items: center;
     align-self: start;
@@ -90,16 +90,14 @@ a {
 }
 
 .container {
-    max-width: em(1170, 16);
+    //max-width: em(1170, 16);
     width: 100%;
     position: relative;
 }
 
 .centered {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
+    padding-left: em(185, 16);
+    padding-right: em(185, 16);
 }
 
 .title {
@@ -114,7 +112,7 @@ a {
 }
 
 .content {
-    margin-left: em(100, 16);
+    margin-left: em(40, 16);
 }
 
 .text {
@@ -159,7 +157,7 @@ a {
 
 }
 
-/*640px*/
+/*639px*/
 @media (max-width: 639px) {
     .home-logo-mobile {
         display: block;
@@ -168,9 +166,26 @@ a {
     .home-logo-desktop {
         display: none;
     }
+
+    body {
+        font-size: em(14, 16);
+    }
+
+    .hero__intro {
+        margin-top: 10vh;
+    }
+
+    .about {
+        padding-top: em(60, 14);
+    }
+
+    .centered {
+        padding-left: em(40, 16);
+        padding-right: em(40, 16);
+    }
 }
 
-/*760px*/
+/*759px*/
 @media (max-width: 759px) {
     .contact__expander {
         display: block;
@@ -187,19 +202,35 @@ a {
     .contact__separator {
         display: none;
     }
+
+    .hero__invite {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__scroll-bg {
+        background-color: transparent;
+    }
+
+    .hero__scroll {
+        color: #FFFFFF;
+        font-size: em(12, 13);
+    }
+
+    .hero__scroll-bg:before, .hero__scroll--animation {
+        display: none;
+    }
 }
 
-
-/*920px*/
+/*924px*/
 @media (max-width: 924px) {
     .job__container {
         flex-direction: column-reverse;
         align-items: center;
-        padding: 0 em(40, 16);
         gap: em(30, 16);
     }
 
-    .job__text, .job__title {
+    .job__text {
         line-height: em(26, 16);
     }
 
@@ -325,7 +356,7 @@ a {
     }
 }
 
-/*1200px*/
+/*1199px*/
 @media (max-width: 1199px) {
     .header__menu {
         display: flex;

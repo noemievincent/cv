@@ -1,6 +1,5 @@
 .projects__content {
-  padding: em(100, 16) em(100, 16) em(20, 16);
-  margin-left: em(135, 16);
+  padding-top: em(100, 16);
 }
 
 .projects__fig:hover + .projects__content .projects__btn:before {
@@ -10,7 +9,7 @@
 }
 
 .projects__container {
-  padding: 0 em(100, 16) em(100, 16);
+  padding-bottom: em(100, 16);
 }
 
 .projects__title {

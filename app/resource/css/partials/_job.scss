@@ -7,6 +7,15 @@
   width: 100%;
 }
 
-.job__details, .job__text {
-  line-height: em(38, 16);
+.job__text {
+  line-height: em(30, 16);
+}
+
+.job__right {
+  padding: em(50, 16) em(100, 16);
+}
+
+.job__content {
+  max-width: em(400, 16);
+
 }
