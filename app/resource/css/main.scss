@@ -305,14 +305,22 @@ a {
     line-height: em(26, 16);
   }
 
+  .contact__menu {
+    grid-template-columns: 50% 1fr;
+  }
+
+  .contact__nav {
+    padding-left: em(60, 16);
+  }
+
   .footer__btn {
     display: none;
     opacity: 0;
   }
 }
 
-/*924px*/
-@media (max-width: 924px) {
+/*945px*/
+@media (max-width: 945px) {
   .centered {
     align-items: start;
     padding-left: em(80, 16);
@@ -557,8 +565,8 @@ a {
 /*639px*/
 @media (max-width: 639px) {
   .centered {
-    padding-left: em(40, 16);
-    padding-right: em(40, 16);
+    padding-left: em(20, 14);
+    padding-right: em(20, 14);
   }
 
   .home-logo-mobile {
@@ -571,6 +579,14 @@ a {
 
   .about {
     padding-top: em(60, 14);
+  }
+
+  .projects__fig {
+    height: 100%;
+  }
+
+  .projects__container {
+    padding-top: em(40, 14);
   }
 
   .projects__list {
@@ -624,5 +640,50 @@ a {
 
 /*479px*/
 @media (max-width: 479px) {
+  .pre:before {
+    display: none;
+  }
 
+  .pre:after {
+    left: 0;
+    top: em(6, 14);
+    width: em(30, 14);
+  }
+
+  .hero__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__intro {
+    padding-top: 0;
+  }
+
+  .hero__title {
+    font-size: em(50, 14);
+  }
+
+  .hero__sub {
+    font-size: em(12, 14);
+  }
+
+  .hero__animation {
+    display: none;
+  }
+
+  .hero__invite {
+    justify-content: start;
+  }
+
+  .hero__scroll-bg {
+    padding-left: em(20, 14);
+  }
+
+  .form__group {
+    padding: 0 em(10, 14);
+  }
+
+  .contact__menu > p {
+    padding-left: em(24, 14);
+  }
 }
