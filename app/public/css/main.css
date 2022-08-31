@@ -1489,7 +1489,7 @@ a {
   transition: background-color ease-in-out 0.2s;
 }
 
-.animated .skills__bar--gray {
+.animated .skills__bar--gray, .no-js .skills__bar:hover .skills__bar--gray, .no-js .skills__bar:focus .skills__bar--gray {
   -webkit-animation: growBar 2s;
           animation: growBar 2s;
 }
